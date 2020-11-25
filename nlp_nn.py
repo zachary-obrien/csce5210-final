@@ -21,7 +21,7 @@ class Data :
   links are of the form POS_deprelPOS wuth POS and deprel
   tags concatenated
   '''
-  def __init__(self,fname='texts/english') :
+  def __init__(self,fname='texts/shopping_bot') :
     wss = tsv2mat("out/"+fname+".tsv")
     self.sents=tsv2mat("out/"+fname+"_sents.tsv")
     occs=defaultdict(set)
@@ -67,7 +67,7 @@ class Query(Data) :
   text query and matches it against data to retrive
   sentences in which most of those edges occur
   '''
-  def __init__(self,fname='texts/english'):
+  def __init__(self,fname='texts/shopping_bot'):
     super().__init__(fname=fname)
     self.nlp_engine=nlp.NLP()
 
@@ -95,7 +95,7 @@ class Inferencer(Query) :
   loads model trained on associating dependency
   edges to sentences in which they occur
   '''
-  def __init__(self,fname='texts/english'):
+  def __init__(self,fname='texts/shopping_bot'):
     super().__init__(fname=fname)
     self.model = load_model(fname+"_model")
 
@@ -117,7 +117,7 @@ class Trainer(Data) :
   '''
   neural network trainer and model builder
   '''
-  def __init__(self,fname='texts/english'):
+  def __init__(self,fname='texts/shopping_bot'):
     super().__init__(fname=fname)
     model = keras.Sequential()
     model.add(layers.Dense(128, input_dim=self.hot_X.shape[1], activation='relu'))
@@ -155,8 +155,11 @@ def plot_graphs(fname,history, metric):
 
 def qtest() :
   q=Query()
-  q.ask(text="What did Penrose show?")
-  q.ask(text="What was in Roger's 1965 paper?")
+  #q.ask(text="What did Penrose show?")
+  #q.ask(text="What was in Roger's 1965 paper?")
+  q.ask(text="What are shopping bots?")
+  q.ask(text="What are the three ways to provide shopping services?")
+
 
 def dtest() :
   d=Data()
@@ -166,7 +169,7 @@ def dtest() :
   print(d.hot_y)
 
 def dtests():
-  dtest('out/texts/english.tsv')
+  dtest('out/texts/shopping_bot.tsv')
   #dtest('out/texts/const.tsv')
   #dtest('out/texts/spanish.tsv')
   #dtest('out/texts/chinese.tsv')
@@ -174,13 +177,49 @@ def dtests():
 
 def ntest() :
   t=Trainer()
-  # i=Inferencer()
-  # print("\n\n")
-  # print("ALGORITHMICALLY DERIVED ANSWERS:\n")
+  i=Inferencer()
+  print("\n\n")
+  print("ALGORITHMICALLY DERIVED ANSWERS:\n")
+
+ 
+  i.ask("When are shopping bots used?")
+  i.ask("How do you use shopping bots?")
+  i.ask("What are client-based shopping bots?")
+  i.ask("What is a difference between server-based and client-based solutions?")
+  i.ask("What are the three ways used to provide shopping bot services?")
+  i.ask("How are shopping bots used in the centralized approach?")
+  i.ask("How are shopping bots used in the broker agent approach?")
+  i.ask("What can a mobile agent be used to do?")
+  i.ask("why are current business models ae based on vendor revenue?")
+  i.ask("What was the purpose of the bot named 'Tete@Tete'?")
+  
+
   # i.ask("What did Penrose show about black holes?")
   # i.ask(text="What was in Roger's 1965 paper?")
-  # print("\n")
-  # print("NEURAL NET'S ANSWERS:\n")
+
+  print("\n")
+  print("NEURAL NET'S ANSWERS:\n")
+  i.query("When are shopping bots used?")
+  i.query("How do you use shopping bots?")
+  i.query("What are server-based shopping bots?")
+  i.query("What are client-based shopping bots?")
+  i.query("What is a difference between server-based and client-based solutions?")
+  i.query("What are the three ways used to provide shopping bot services?")
+  i.query("How are shopping bots used in the centralized approach?")
+  i.query("What does collaborative filtering imply?")
+  i.query("why are current business models ae based on vendor revenue?")
+  i.query("What was the purpose of Tete@Tete?")
+
+  i.query("How do you use shopping bots?")
+  i.query("What are client-based shopping bots?")
+  i.query("What is a difference between server-based and client-based solutions?")
+  i.query("What are the three ways used to provide shopping bot services?")
+  i.query("How are shopping bots used in the centralized approach?")
+  i.query("How are shopping bots used in the broker agent approach?")
+  i.query("What does collaborative filtering imply?")
+  i.query("why are current business models ae based on vendor revenue?")
+  i.query("What was the purpose of the bot named 'Tete@Tete'?")
+
   # i.query("What did Penrose show about black holes?")
   # i.query(text="What was in Roger's 1965 paper?")
 
