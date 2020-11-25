@@ -1,0 +1,1863 @@
+Shopping	NOUNcompoundNOUN	bot	0
+Shopping	NOUNinCOMPOUND	Shopping bot	0
+bot	NOUNinCOMPOUND	Shopping bot	0
+0	ABOUT	Shopping bot	0
+tool	NOUNrev_nsubjNOUN	bot	0
+0	ABOUT	bot	0
+be	AUXcopNOUN	tool	0
+""""	PUNCTpunctNOUN	tool	0
+automated	ADJamodNOUN	tool	0
+tool	NOUN_PREDICATE_OF	0	0
+that	PRONnsubjVERB	allow	0
+allow	VERBacl:relclNOUN	tool	0
+allow	VERBrev_objNOUN	customer	0
+0	ABOUT	customer	0
+to	PARTmarkVERB	search	0
+easily	ADVadvmodVERB	search	0
+search	VERBxcompVERB	allow	0
+for	ADPcaseNOUN	price	0
+search	VERBrev_oblNOUN	price	0
+0	ABOUT	price	0
+and	CCONJccNOUN	characteristic	0
+product	NOUNcompoundNOUN	characteristic	0
+product	NOUNinCOMPOUND	product characteristic	0
+characteristic	NOUNinCOMPOUND	product characteristic	0
+0	ABOUT	product characteristic	0
+characteristic	NOUNconjNOUN	price	0
+from	ADPcaseNOUN	retailer	0
+online	ADJamodNOUN	retailer	0
+search	VERBrev_oblNOUN	retailer	0
+0	ABOUT	retailer	0
+""""	PUNCTpunctNOUN	tool	0
+.	PUNCTpunctNOUN	tool	0
+they	PRONnsubjADJ	available	1
+be	AUXcopADJ	available	1
+available	ADJ_PREDICATE_OF	1	1
+on	ADPcaseNOUN	internet	1
+the	DETdetNOUN	internet	1
+available	ADJrev_oblNOUN	internet	1
+1	ABOUT	internet	1
+and	CCONJccVERB	act	1
+act	VERBconjADJ	available	1
+as	ADPcaseNOUN	engine	1
+electronic	ADJamodNOUN	engine	1
+commerce	NOUNcompoundNOUN	engine	1
+commerce	NOUNinCOMPOUND	commerce engine	1
+engine	NOUNinCOMPOUND	commerce engine	1
+1	ABOUT	commerce engine	1
+search	NOUNcompoundNOUN	engine	1
+search	NOUNinCOMPOUND	search engine	1
+engine	NOUNinCOMPOUND	search engine	1
+1	ABOUT	search engine	1
+act	VERBrev_oblNOUN	engine	1
+1	ABOUT	engine	1
+.	PUNCTpunctADJ	available	1
+accept	VERBrev_nsubjNOUN	bot	2
+2	ABOUT	bot	2
+accept	VERB_PREDICATE_OF	2	2
+user	NOUNcompoundNOUN	query	2
+user	NOUNinCOMPOUND	user query	2
+query	NOUNinCOMPOUND	user query	2
+2	ABOUT	user query	2
+accept	VERBrev_objNOUN	query	2
+2	ABOUT	query	2
+,	PUNCTpunctVERB	visit	2
+visit	VERBconjVERB	accept	2
+visit	VERBrev_objNOUN	eshop	2
+2	ABOUT	eshop	2
+or	CCONJccNOUN	website	2
+website	NOUNconjNOUN	eshop	2
+of	ADPcaseNOUN	merchant	2
+online	ADJamodNOUN	merchant	2
+merchant	NOUNnmodNOUN	eshop	2
+that	PRONnsubjVERB	have	2
+may	AUXauxVERB	have	2
+have	VERBacl:relclNOUN	merchant	2
+a	DETdetNOUN	product	2
+specific	ADJamodNOUN	product	2
+have	VERBrev_objNOUN	product	2
+2	ABOUT	product	2
+,	PUNCTpunctVERB	retrieve	2
+retrieve	VERBconjVERB	have	2
+search	NOUNcompoundNOUN	result	2
+search	NOUNinCOMPOUND	search result	2
+result	NOUNinCOMPOUND	search result	2
+2	ABOUT	search result	2
+retrieve	VERBrev_objNOUN	result	2
+2	ABOUT	result	2
+,	PUNCTpunctVERB	present	2
+and	CCONJccVERB	present	2
+present	VERBconjVERB	have	2
+they	PRONobjVERB	present	2
+in	ADPcaseNOUN	format	2
+a	DETdetNOUN	format	2
+consolidate	VERBamodNOUN	format	2
+and	CCONJccADJ	compact	2
+compact	ADJconjVERB	consolidate	2
+present	VERBrev_oblNOUN	format	2
+2	ABOUT	format	2
+for	ADPcaseNOUN	comparison	2
+visual	ADJamodNOUN	comparison	2
+comparison	NOUNnmodNOUN	format	2
+.	PUNCTpunctVERB	accept	2
+there	PRONexplVERB	be	3
+be	VERB_PREDICATE_OF	3	3
+various	ADJamodNOUN	service	3
+shopping	NOUNcompoundNOUN	bot	3
+shopping	NOUNinCOMPOUND	shopping bot	3
+bot	NOUNinCOMPOUND	shopping bot	3
+3	ABOUT	shopping bot	3
+bot	NOUNcompoundNOUN	service	3
+bot	NOUNinCOMPOUND	bot service	3
+service	NOUNinCOMPOUND	bot service	3
+3	ABOUT	bot service	3
+be	VERBrev_nsubjNOUN	service	3
+3	ABOUT	service	3
+.	PUNCTpunctVERB	be	3
+in	ADPcaseADJ	general	4
+general	ADJoblVERB	divide	4
+,	PUNCTpunctVERB	divide	4
+they	PRONnsubj:passVERB	divide	4
+can	AUXauxVERB	divide	4
+be	AUXaux:passVERB	divide	4
+divide	VERB_PREDICATE_OF	4	4
+into	ADPcaseNOUN	type	4
+two	NUMnummodNOUN	type	4
+divide	VERBrev_oblNOUN	type	4
+4	ABOUT	type	4
+:	PUNCTpunctNOUN	type	4
+base	VERBrev_obl:npmodNOUN	server	4
+4	ABOUT	server	4
+-	PUNCTpunctVERB	base	4
+base	VERBamodNOUN	solution	4
+and	CCONJccNOUN	solution	4
+base	VERBrev_obl:npmodNOUN	client	4
+4	ABOUT	client	4
+-	PUNCTpunctVERB	base	4
+base	VERBamodNOUN	solution	4
+solution	NOUNapposNOUN	type	4
+.	PUNCTpunctVERB	divide	4
+a	DETdetNOUN	bot	5
+base	VERBrev_obl:npmodNOUN	server	5
+5	ABOUT	server	5
+-	PUNCTpunctVERB	base	5
+base	VERBamodNOUN	bot	5
+shopping	NOUNcompoundNOUN	bot	5
+shopping	NOUNinCOMPOUND	shopping bot	5
+bot	NOUNinCOMPOUND	shopping bot	5
+5	ABOUT	shopping bot	5
+perform	VERBrev_nsubjNOUN	bot	5
+5	ABOUT	bot	5
+perform	VERB_PREDICATE_OF	5	5
+price	NOUNcompoundNOUN	comparison	5
+price	NOUNinCOMPOUND	price comparison	5
+comparison	NOUNinCOMPOUND	price comparison	5
+5	ABOUT	price comparison	5
+perform	VERBrev_objNOUN	comparison	5
+5	ABOUT	comparison	5
+on	ADPcaseNOUN	server	5
+a	DETdetNOUN	server	5
+web	NOUNcompoundNOUN	server	5
+web	NOUNinCOMPOUND	web server	5
+server	NOUNinCOMPOUND	web server	5
+5	ABOUT	web server	5
+server	NOUNnmodNOUN	comparison	5
+.	PUNCTpunctVERB	perform	5
+some	DETdetNOUN	example	6
+include	VERBrev_nsubjNOUN	example	6
+6	ABOUT	example	6
+include	VERB_PREDICATE_OF	6	6
+bestbookbuys.com	XobjVERB	include	6
+,	PUNCTpunctX	pricewatch.com	6
+pricewatch.com	XconjX	bestbookbuys.com	6
+,	PUNCTpunctX	mysimon.com	6
+and	CCONJccX	mysimon.com	6
+mysimon.com	XconjX	bestbookbuys.com	6
+.	PUNCTpunctVERB	include	6
+for	ADPcaseNOUN	bot	7
+a	DETdetNOUN	bot	7
+client	NOUNcompoundVERB	base	7
+client	NOUNinCOMPOUND	client base	7
+base	VERBinCOMPOUND	client base	7
+7	ABOUT	client base	7
+-	PUNCTpunctVERB	base	7
+base	VERBamodNOUN	bot	7
+need	VERBrev_oblNOUN	bot	7
+7	ABOUT	bot	7
+,	PUNCTpunctVERB	need	7
+a	DETdetNOUN	application	7
+special	ADJamodNOUN	application	7
+software	NOUNcompoundNOUN	application	7
+software	NOUNinCOMPOUND	software application	7
+application	NOUNinCOMPOUND	software application	7
+7	ABOUT	software application	7
+need	VERBrev_nsubjNOUN	application	7
+7	ABOUT	application	7
+need	VERB_PREDICATE_OF	7	7
+to	PARTmarkVERB	install	7
+be	AUXaux:passVERB	install	7
+install	VERBxcompVERB	need	7
+on	ADPcaseNOUN	side	7
+the	DETdetNOUN	side	7
+client	NOUNcompoundNOUN	side	7
+client	NOUNinCOMPOUND	client side	7
+side	NOUNinCOMPOUND	client side	7
+7	ABOUT	client side	7
+-	PUNCTpunctNOUN	side	7
+install	VERBrev_oblNOUN	side	7
+7	ABOUT	side	7
+.	PUNCTpunctVERB	need	7
+this	DETdetNOUN	system	8
+configure	VERBrev_nsubj:passNOUN	system	8
+8	ABOUT	system	8
+can	AUXauxVERB	configure	8
+be	AUXaux:passVERB	configure	8
+configure	VERB_PREDICATE_OF	8	8
+to	PARTmarkVERB	check	8
+check	VERBadvclVERB	configure	8
+specific	ADJamodNOUN	price	8
+item	NOUNcompoundNOUN	price	8
+item	NOUNinCOMPOUND	item price	8
+price	NOUNinCOMPOUND	item price	8
+8	ABOUT	item price	8
+check	VERBrev_objNOUN	price	8
+8	ABOUT	price	8
+from	ADPcaseNOUN	vendor	8
+know	VERBamodNOUN	vendor	8
+check	VERBrev_oblNOUN	vendor	8
+8	ABOUT	vendor	8
+or	CCONJccNOUN	engine	8
+search	NOUNcompoundNOUN	engine	8
+search	NOUNinCOMPOUND	search engine	8
+engine	NOUNinCOMPOUND	search engine	8
+8	ABOUT	search engine	8
+engine	NOUNconjNOUN	vendor	8
+on	ADPcaseNOUN	basis	8
+a	DETdetNOUN	basis	8
+regular	ADJamodNOUN	basis	8
+check	VERBrev_oblNOUN	basis	8
+8	ABOUT	basis	8
+.	PUNCTpunctVERB	configure	8
+some	DETdetNOUN	example	9
+include	VERBrev_nsubjNOUN	example	9
+9	ABOUT	example	9
+include	VERB_PREDICATE_OF	9	9
+Copernic	PROPNobjVERB	include	9
+Shopper1	PROPNflatPROPN	Copernic	9
+Shopper1	PROPNinCOMPOUND	Shopper1 Copernic	9
+Copernic	PROPNinCOMPOUND	Shopper1 Copernic	9
+9	ABOUT	Shopper1 Copernic	9
+and	CCONJccNOUN	price	9
+best	ADJamodNOUN	price	9
+price	NOUNconjPROPN	Copernic	9
+2	NUMnummodNOUN	price	9
+.	PUNCTpunctVERB	include	9
+technically	ADVadvmodVERB	be	10
+,	PUNCTpunctVERB	be	10
+there	PRONexplVERB	be	10
+be	VERB_PREDICATE_OF	10	10
+three	NUMnummodNOUN	way	10
+be	VERBrev_nsubjNOUN	way	10
+10	ABOUT	way	10
+to	PARTmarkVERB	provide	10
+provide	VERBaclNOUN	way	10
+shopping	NOUNcompoundNOUN	service	10
+shopping	NOUNinCOMPOUND	shopping service	10
+service	NOUNinCOMPOUND	shopping service	10
+10	ABOUT	shopping service	10
+bot	NOUNcompoundNOUN	service	10
+bot	NOUNinCOMPOUND	bot service	10
+service	NOUNinCOMPOUND	bot service	10
+10	ABOUT	bot service	10
+provide	VERBrev_objNOUN	service	10
+10	ABOUT	service	10
+:	PUNCTpunctNOUN	service	10
+a	DETdetNOUN	database	10
+centralize	VERBamodNOUN	database	10
+database	NOUNapposNOUN	service	10
+,	PUNCTpunctNOUN	agent	10
+broker	NOUNcompoundNOUN	agent	10
+broker	NOUNinCOMPOUND	broker agent	10
+agent	NOUNinCOMPOUND	broker agent	10
+10	ABOUT	broker agent	10
+agent	NOUNconjNOUN	database	10
+and	CCONJccNOUN	agent	10
+mobile	ADJamodNOUN	agent	10
+agent	NOUNconjNOUN	database	10
+.	PUNCTpunctVERB	be	10
+in	ADPcaseNOUN	approach	11
+the	DETdetNOUN	approach	11
+centralize	VERBamodNOUN	approach	11
+database	NOUNcompoundNOUN	approach	11
+database	NOUNinCOMPOUND	database approach	11
+approach	NOUNinCOMPOUND	database approach	11
+11	ABOUT	database approach	11
+have	VERBrev_oblNOUN	approach	11
+11	ABOUT	approach	11
+,	PUNCTpunctVERB	have	11
+each	DETdetNOUN	bot	11
+shopping	NOUNcompoundNOUN	bot	11
+shopping	NOUNinCOMPOUND	shopping bot	11
+bot	NOUNinCOMPOUND	shopping bot	11
+11	ABOUT	shopping bot	11
+have	VERBrev_nsubjNOUN	bot	11
+11	ABOUT	bot	11
+have	VERB_PREDICATE_OF	11	11
+its	PRONnmod:possNOUN	database	11
+own	ADJamodNOUN	database	11
+product	NOUNcompoundNOUN	information	11
+product	NOUNinCOMPOUND	product information	11
+information	NOUNinCOMPOUND	product information	11
+11	ABOUT	product information	11
+information	NOUNcompoundNOUN	database	11
+information	NOUNinCOMPOUND	information database	11
+database	NOUNinCOMPOUND	information database	11
+11	ABOUT	information database	11
+have	VERBrev_objNOUN	database	11
+11	ABOUT	database	11
+.	PUNCTpunctVERB	have	11
+submit	VERBrev_nsubjNOUN	seller	12
+12	ABOUT	seller	12
+submit	VERB_PREDICATE_OF	12	12
+they	PRONnmod:possNOUN	offering	12
+submit	VERBrev_objNOUN	offering	12
+12	ABOUT	offering	12
+and	CCONJccVERB	update	12
+update	VERBconjVERB	submit	12
+the	DETdetNOUN	database	12
+update	VERBrev_objNOUN	database	12
+12	ABOUT	database	12
+regularly	ADVadvmodVERB	update	12
+,	PUNCTpunctVERB	update	12
+either	CCONJcc:preconjADV	manually	12
+manually	ADVadvmodVERB	update	12
+or	CCONJccADV	automatically	12
+automatically	ADVconjADV	manually	12
+.	PUNCTpunctVERB	submit	12
+essentially	ADVadvmodVERB	provide	13
+,	PUNCTpunctVERB	provide	13
+the	DETdetNOUN	bot	13
+provide	VERBrev_nsubjNOUN	bot	13
+13	ABOUT	bot	13
+provide	VERB_PREDICATE_OF	13	13
+advertising	NOUNcompoundNOUN	service	13
+advertising	NOUNinCOMPOUND	advertising service	13
+service	NOUNinCOMPOUND	advertising service	13
+13	ABOUT	advertising service	13
+provide	VERBrev_objNOUN	service	13
+13	ABOUT	service	13
+for	ADPcaseNOUN	seller	13
+the	DETdetNOUN	seller	13
+provide	VERBrev_oblNOUN	seller	13
+13	ABOUT	seller	13
+.	PUNCTpunctVERB	provide	13
+in	ADPcaseNOUN	approach	14
+the	DETdetNOUN	approach	14
+broker	NOUNcompoundNOUN	agent	14
+broker	NOUNinCOMPOUND	broker agent	14
+agent	NOUNinCOMPOUND	broker agent	14
+14	ABOUT	broker agent	14
+agent	NOUNcompoundNOUN	approach	14
+agent	NOUNinCOMPOUND	agent approach	14
+approach	NOUNinCOMPOUND	agent approach	14
+14	ABOUT	agent approach	14
+use	VERBrev_oblNOUN	approach	14
+14	ABOUT	approach	14
+,	PUNCTpunctVERB	use	14
+shopping	NOUNcompoundNOUN	bot	14
+shopping	NOUNinCOMPOUND	shopping bot	14
+bot	NOUNinCOMPOUND	shopping bot	14
+14	ABOUT	shopping bot	14
+use	VERBrev_nsubj:passNOUN	bot	14
+14	ABOUT	bot	14
+be	AUXaux:passVERB	use	14
+use	VERB_PREDICATE_OF	14	14
+to	PARTmarkVERB	extract	14
+extract	VERBadvclVERB	use	14
+product	NOUNcompoundNOUN	information	14
+product	NOUNinCOMPOUND	product information	14
+information	NOUNinCOMPOUND	product information	14
+14	ABOUT	product information	14
+extract	VERBrev_objNOUN	information	14
+14	ABOUT	information	14
+from	ADPcaseNOUN	site	14
+different	ADJamodNOUN	seller	14
+seller	NOUNnmod:possNOUN	site	14
+'s	PARTcaseNOUN	seller	14
+web	NOUNcompoundNOUN	site	14
+web	NOUNinCOMPOUND	web site	14
+site	NOUNinCOMPOUND	web site	14
+14	ABOUT	web site	14
+extract	VERBrev_oblNOUN	site	14
+14	ABOUT	site	14
+.	PUNCTpunctVERB	use	14
+mobile	NOUNcompoundNOUN	agent	15
+mobile	NOUNinCOMPOUND	mobile agent	15
+agent	NOUNinCOMPOUND	mobile agent	15
+15	ABOUT	mobile agent	15
+utilize	VERBrev_nsubj:passNOUN	agent	15
+15	ABOUT	agent	15
+can	AUXauxVERB	utilize	15
+be	AUXaux:passVERB	utilize	15
+utilize	VERB_PREDICATE_OF	15	15
+to	PARTmarkVERB	visit	15
+visit	VERBadvclVERB	utilize	15
+each	DETdetNOUN	seller	15
+seller	NOUNnmod:possNOUN	website	15
+'s	PARTcaseNOUN	seller	15
+visit	VERBrev_objNOUN	website	15
+15	ABOUT	website	15
+to	PARTmarkVERB	compare	15
+compare	VERBadvclVERB	visit	15
+the	DETdetNOUN	price	15
+compare	VERBrev_objNOUN	price	15
+15	ABOUT	price	15
+of	ADPcaseNOUN	product	15
+the	DETdetNOUN	product	15
+product	NOUNnmodNOUN	price	15
+of	ADPcaseNOUN	interest	15
+interest	NOUNnmodNOUN	product	15
+.	PUNCTpunctVERB	utilize	15
+besides	SCONJmarkVERB	search	16
+search	VERBadvclVERB	employ	16
+,	PUNCTpunctVERB	employ	16
+a	DETdetNOUN	agent	16
+mobile	ADJamodNOUN	agent	16
+employ	VERBrev_nsubj:passNOUN	agent	16
+16	ABOUT	agent	16
+can	AUXauxVERB	employ	16
+in	ADPcaseNOUN	fact	16
+employ	VERBrev_oblNOUN	fact	16
+16	ABOUT	fact	16
+be	AUXaux:passVERB	employ	16
+employ	VERB_PREDICATE_OF	16	16
+to	PARTmarkVERB	complete	16
+complete	VERBadvclVERB	employ	16
+a	DETdetNOUN	purchase	16
+complete	VERBrev_objNOUN	purchase	16
+16	ABOUT	purchase	16
+which	PRONnsubjNOUN	step	16
+be	AUXcopNOUN	step	16
+the	DETdetNOUN	step	16
+last	ADJamodNOUN	step	16
+step	NOUNacl:relclNOUN	purchase	16
+in	ADPcaseNOUN	process	16
+the	DETdetNOUN	process	16
+buying	NOUNcompoundNOUN	process	16
+buying	NOUNinCOMPOUND	buying process	16
+process	NOUNinCOMPOUND	buying process	16
+16	ABOUT	buying process	16
+process	NOUNnmodNOUN	step	16
+.	PUNCTpunctVERB	employ	16
+a	DETdetNOUN	framework	17
+theoretical	ADJamodNOUN	framework	17
+find	VERBrev_nsubj:passNOUN	framework	17
+17	ABOUT	framework	17
+that	PRONnsubjVERB	lead	17
+lead	VERBacl:relclNOUN	framework	17
+to	ADPcaseNOUN	development	17
+the	DETdetNOUN	development	17
+lead	VERBrev_oblNOUN	development	17
+17	ABOUT	development	17
+of	ADPcaseNOUN	bot	17
+shopping	NOUNcompoundNOUN	bot	17
+shopping	NOUNinCOMPOUND	shopping bot	17
+bot	NOUNinCOMPOUND	shopping bot	17
+17	ABOUT	shopping bot	17
+bot	NOUNnmodNOUN	development	17
+can	AUXauxVERB	find	17
+be	AUXaux:passVERB	find	17
+find	VERB_PREDICATE_OF	17	17
+in	ADPcaseNOUN	economics	17
+the	DETdetNOUN	economics	17
+find	VERBrev_oblNOUN	economics	17
+17	ABOUT	economics	17
+of	ADPcaseNOUN	theory	17
+information	NOUNcompoundNOUN	theory	17
+information	NOUNinCOMPOUND	information theory	17
+theory	NOUNinCOMPOUND	information theory	17
+17	ABOUT	information theory	17
+theory	NOUNnmodNOUN	economics	17
+,	PUNCTpunctNOUN	economics	17
+where	ADVadvmodVERB	argue	17
+Stigler	PROPNnsubjVERB	argue	17
+argue	VERBacl:relclNOUN	theory	17
+that	SCONJmarkVERB	stop	17
+stop	VERBrev_nsubjNOUN	consumer	17
+17	ABOUT	consumer	17
+who	PRONnsubjVERB	value	17
+value	VERBacl:relclNOUN	consumer	17
+value	VERBrev_objNOUN	time	17
+17	ABOUT	time	17
+will	AUXauxVERB	stop	17
+stop	VERBccompVERB	argue	17
+search	VERBxcompVERB	stop	17
+when	ADVmarkVERB	outweigh	17
+the	DETdetNOUN	benefit	17
+marginal	ADJamodNOUN	benefit	17
+outweigh	VERBrev_nsubjNOUN	benefit	17
+17	ABOUT	benefit	17
+of	ADPcaseNOUN	search	17
+search	NOUNnmodNOUN	benefit	17
+no	ADVadvmodADV	longer	17
+longer	ADVadvmodVERB	outweigh	17
+outweigh	VERBadvclVERB	search	17
+the	DETdetNOUN	cost	17
+marginal	ADJamodNOUN	cost	17
+search	NOUNcompoundNOUN	cost	17
+search	NOUNinCOMPOUND	search cost	17
+cost	NOUNinCOMPOUND	search cost	17
+17	ABOUT	search cost	17
+outweigh	VERBrev_objNOUN	cost	17
+17	ABOUT	cost	17
+.	PUNCTpunctVERB	find	17
+hence	ADVadvmodVERB	limit	18
+,	PUNCTpunctVERB	limit	18
+the	DETdetNOUN	usage	18
+limit	VERBrev_nsubj:passNOUN	usage	18
+18	ABOUT	usage	18
+of	ADPcaseNOUN	bot	18
+a	DETdetNOUN	bot	18
+shopping	NOUNcompoundNOUN	bot	18
+shopping	NOUNinCOMPOUND	shopping bot	18
+bot	NOUNinCOMPOUND	shopping bot	18
+18	ABOUT	shopping bot	18
+bot	NOUNnmodNOUN	usage	18
+be	AUXaux:passVERB	limit	18
+not	PARTadvmodVERB	limit	18
+limit	VERB_PREDICATE_OF	18	18
+to	SCONJmarkVERB	type	18
+simply	ADVadvmodVERB	type	18
+type	VERBadvclVERB	limit	18
+in	ADPcaseNOUN	keyword	18
+a	DETdetNOUN	keyword	18
+few	ADJamodNOUN	keyword	18
+type	VERBrev_oblNOUN	keyword	18
+18	ABOUT	keyword	18
+and	CCONJccVERB	wait	18
+wait	VERBconjVERB	type	18
+for	ADPcaseNOUN	result	18
+the	DETdetNOUN	result	18
+wait	VERBrev_oblNOUN	result	18
+18	ABOUT	result	18
+.	PUNCTpunctVERB	limit	18
+need	VERBrev_nsubjNOUN	Consumers	19
+19	ABOUT	Consumers	19
+need	VERB_PREDICATE_OF	19	19
+to	PARTmarkVERB	decide	19
+decide	VERBxcompVERB	need	19
+how	ADVadvmodVERB	add	19
+the	DETdetNOUN	information	19
+add	VERBrev_nsubjNOUN	information	19
+19	ABOUT	information	19
+generate	VERBaclNOUN	information	19
+by	ADPcaseNOUN	bot	19
+a	DETdetNOUN	bot	19
+generate	VERBrev_oblNOUN	bot	19
+19	ABOUT	bot	19
+add	VERBccompVERB	decide	19
+to	ADPcaseNOUN	process	19
+the	DETdetNOUN	process	19
+entire	ADJamodNOUN	process	19
+purchase	NOUNcompoundNOUN	process	19
+purchase	NOUNinCOMPOUND	purchase process	19
+process	NOUNinCOMPOUND	purchase process	19
+19	ABOUT	purchase process	19
+decision	NOUNcompoundNOUN	making	19
+decision	NOUNinCOMPOUND	decision making	19
+making	NOUNinCOMPOUND	decision making	19
+19	ABOUT	decision making	19
+-	PUNCTpunctNOUN	making	19
+making	NOUNcompoundNOUN	process	19
+making	NOUNinCOMPOUND	making process	19
+process	NOUNinCOMPOUND	making process	19
+19	ABOUT	making process	19
+add	VERBrev_oblNOUN	process	19
+19	ABOUT	process	19
+.	PUNCTpunctVERB	need	19
+to	PARTmarkADJ	effective	20
+be	AUXcopADJ	effective	20
+effective	ADJadvclVERB	need	20
+,	PUNCTpunctVERB	need	20
+need	VERBrev_nsubjNOUN	time	20
+20	ABOUT	time	20
+spend	VERBaclNOUN	time	20
+search	VERBxcompVERB	spend	20
+with	ADPcaseNOUN	bot	20
+shopping	NOUNcompoundNOUN	bot	20
+shopping	NOUNinCOMPOUND	shopping bot	20
+bot	NOUNinCOMPOUND	shopping bot	20
+20	ABOUT	shopping bot	20
+search	VERBrev_oblNOUN	bot	20
+20	ABOUT	bot	20
+need	VERB_PREDICATE_OF	20	20
+to	PARTmarkVERB	minimize	20
+be	AUXaux:passVERB	minimize	20
+minimize	VERBxcompVERB	need	20
+.	PUNCTpunctVERB	need	20
+this	PRONnsubjADJ	important	21
+be	AUXcopADJ	important	21
+particularly	ADVadvmodADJ	important	21
+important	ADJ_PREDICATE_OF	21	21
+since	SCONJmarkNOUN	stage	21
+the	DETdetNOUN	use	21
+stage	NOUNrev_nsubjNOUN	use	21
+21	ABOUT	use	21
+of	ADPcaseNOUN	bot	21
+a	DETdetNOUN	bot	21
+shopping	NOUNcompoundNOUN	bot	21
+shopping	NOUNinCOMPOUND	shopping bot	21
+bot	NOUNinCOMPOUND	shopping bot	21
+21	ABOUT	shopping bot	21
+bot	NOUNnmodNOUN	use	21
+be	AUXcopNOUN	stage	21
+only	ADVadvmodNOUN	stage	21
+one	NUMnummodNOUN	stage	21
+stage	NOUNadvclADJ	important	21
+in	ADPcaseNOUN	process	21
+the	DETdetNOUN	process	21
+product	NOUNcompoundNOUN	acquisition	21
+product	NOUNinCOMPOUND	product acquisition	21
+acquisition	NOUNinCOMPOUND	product acquisition	21
+21	ABOUT	product acquisition	21
+acquisition	NOUNcompoundNOUN	process	21
+acquisition	NOUNinCOMPOUND	acquisition process	21
+process	NOUNinCOMPOUND	acquisition process	21
+21	ABOUT	acquisition process	21
+process	NOUNnmodNOUN	stage	21
+.	PUNCTpunctADJ	important	21
+Peterson	PROPNnsubjVERB	emphasize	22
+,	PUNCTpunctPROPN	Balasbramanian	22
+Balasbramanian	PROPNconjPROPN	Peterson	22
+,	PUNCTpunctPROPN	Bronnenberg	22
+&	CCONJccPROPN	Bronnenberg	22
+Bronnenberg	PROPNconjPROPN	Peterson	22
+emphasize	VERB_PREDICATE_OF	22	22
+that	SCONJmarkADJ	likely	22
+for	ADPcaseNOUN	category	22
+some	DETdetNOUN	category	22
+likely	ADJrev_oblNOUN	category	22
+22	ABOUT	category	22
+of	ADPcaseNOUN	goods	22
+goods	NOUNnmodNOUN	category	22
+,	PUNCTpunctADJ	likely	22
+likely	ADJrev_nsubjNOUN	consumer	22
+22	ABOUT	consumer	22
+be	AUXcopADJ	likely	22
+likely	ADJccompVERB	emphasize	22
+to	PARTmarkVERB	search	22
+search	VERBxcompADJ	likely	22
+both	CCONJcc:preconjNOUN	internet	22
+the	DETdetNOUN	internet	22
+search	VERBrev_objNOUN	internet	22
+22	ABOUT	internet	22
+and	CCONJccNOUN	channel	22
+conventional	ADJamodNOUN	channel	22
+retailing	NOUNcompoundNOUN	channel	22
+retailing	NOUNinCOMPOUND	retailing channel	22
+channel	NOUNinCOMPOUND	retailing channel	22
+22	ABOUT	retailing channel	22
+channel	NOUNconjNOUN	internet	22
+.	PUNCTpunctVERB	emphasize	22
+the	DETdetNOUN	framework	23
+theoretical	ADJamodNOUN	framework	23
+mention	VERBrev_nsubjNOUN	framework	23
+23	ABOUT	framework	23
+mention	VERBcsubjNOUN	driver	23
+above	ADVadvmodVERB	mention	23
+be	AUXcopNOUN	driver	23
+the	DETdetNOUN	driver	23
+driver	NOUN_PREDICATE_OF	23	23
+for	ADPcaseNOUN	stage	23
+the	DETdetNOUN	stage	23
+early	ADJamodNOUN	stage	23
+stage	NOUNnmodNOUN	driver	23
+of	ADPcaseNOUN	design	23
+shopping	NOUNcompoundNOUN	bot	23
+shopping	NOUNinCOMPOUND	shopping bot	23
+bot	NOUNinCOMPOUND	shopping bot	23
+23	ABOUT	shopping bot	23
+bot	NOUNcompoundNOUN	design	23
+bot	NOUNinCOMPOUND	bot design	23
+design	NOUNinCOMPOUND	bot design	23
+23	ABOUT	bot design	23
+design	NOUNnmodNOUN	stage	23
+and	CCONJccNOUN	implementation	23
+implementation	NOUNconjNOUN	design	23
+and	CCONJccVERB	continue	23
+continue	VERBconjNOUN	driver	23
+to	PARTmarkVERB	fuel	23
+fuel	VERBxcompVERB	continue	23
+the	DETdetNOUN	effort	23
+fuel	VERBrev_objNOUN	effort	23
+23	ABOUT	effort	23
+of	SCONJmarkVERB	improve	23
+improve	VERBaclNOUN	effort	23
+the	DETdetNOUN	performance	23
+improve	VERBrev_objNOUN	performance	23
+23	ABOUT	performance	23
+and	CCONJccNOUN	functionality	23
+functionality	NOUNconjNOUN	performance	23
+of	ADPcaseNOUN	bot	23
+shopping	NOUNcompoundNOUN	bot	23
+shopping	NOUNinCOMPOUND	shopping bot	23
+bot	NOUNinCOMPOUND	shopping bot	23
+23	ABOUT	shopping bot	23
+bot	NOUNnmodNOUN	performance	23
+.	PUNCTpunctNOUN	driver	23
+in	ADPcaseNOUN	past	24
+the	DETdetNOUN	past	24
+refer	VERBrev_oblNOUN	past	24
+24	ABOUT	past	24
+,	PUNCTpunctVERB	refer	24
+shopping	NOUNcompoundNOUN	bot	24
+shopping	NOUNinCOMPOUND	shopping bot	24
+bot	NOUNinCOMPOUND	shopping bot	24
+24	ABOUT	shopping bot	24
+refer	VERBrev_nsubj:passNOUN	bot	24
+24	ABOUT	bot	24
+be	AUXaux:passVERB	refer	24
+often	ADVadvmodVERB	refer	24
+refer	VERB_PREDICATE_OF	24	24
+to	ADPcaseNOUN	agent	24
+as	ADPcaseNOUN	agent	24
+refer	VERBrev_oblNOUN	agent	24
+24	ABOUT	agent	24
+,	PUNCTpunctNOUN	agent	24
+intelligent	ADJamodNOUN	agent	24
+agent	NOUNconjNOUN	agent	24
+,	PUNCTpunctNOUN	agent	24
+software	NOUNcompoundNOUN	agent	24
+software	NOUNinCOMPOUND	software agent	24
+agent	NOUNinCOMPOUND	software agent	24
+24	ABOUT	software agent	24
+agent	NOUNconjNOUN	agent	24
+or	CCONJccNOUN	assistant	24
+intelligent	ADJamodNOUN	assistant	24
+assistant	NOUNconjNOUN	agent	24
+.	PUNCTpunctVERB	refer	24
+in	ADPcaseNOUN	paper	25
+this	DETdetNOUN	paper	25
+treat	VERBrev_oblNOUN	paper	25
+25	ABOUT	paper	25
+,	PUNCTpunctVERB	treat	25
+they	PRONnsubj:passVERB	treat	25
+be	AUXaux:passVERB	treat	25
+treat	VERB_PREDICATE_OF	25	25
+as	ADPcaseNOUN	application	25
+regular	ADJamodNOUN	application	25
+software	NOUNcompoundVERB	base	25
+software	NOUNinCOMPOUND	software base	25
+base	VERBinCOMPOUND	software base	25
+25	ABOUT	software base	25
+-	PUNCTpunctVERB	base	25
+base	VERBamodNOUN	application	25
+treat	VERBrev_oblNOUN	application	25
+25	ABOUT	application	25
+.	PUNCTpunctVERB	treat	25
+it	PRONnsubj:passVERB	note	26
+be	AUXaux:passVERB	note	26
+note	VERB_PREDICATE_OF	26	26
+that	SCONJmarkNOUN	scope	26
+a	DETdetNOUN	discussion	26
+scope	NOUNrev_nsubjNOUN	discussion	26
+26	ABOUT	discussion	26
+of	SCONJmarkVERB	belong	26
+whether	SCONJmarkVERB	belong	26
+shopping	NOUNcompoundNOUN	bot	26
+shopping	NOUNinCOMPOUND	shopping bot	26
+bot	NOUNinCOMPOUND	shopping bot	26
+26	ABOUT	shopping bot	26
+belong	VERBrev_nsubjNOUN	bot	26
+26	ABOUT	bot	26
+actually	ADVadvmodVERB	belong	26
+belong	VERBaclNOUN	discussion	26
+to	ADPcaseNOUN	field	26
+the	DETdetNOUN	field	26
+belong	VERBrev_oblNOUN	field	26
+26	ABOUT	field	26
+of	ADPcaseNOUN	agent	26
+intelligent	ADJamodNOUN	agent	26
+agent	NOUNnmodNOUN	field	26
+be	AUXcopNOUN	scope	26
+out	ADPcaseNOUN	scope	26
+of	ADPcaseNOUN	scope	26
+the	DETdetNOUN	scope	26
+scope	NOUNccompVERB	note	26
+of	ADPcaseNOUN	project	26
+this	DETdetNOUN	project	26
+project	NOUNnmodNOUN	scope	26
+.	PUNCTpunctVERB	note	26
+as	ADPcaseADJ	such	27
+such	ADJoblVERB	concentrate	27
+,	PUNCTpunctVERB	concentrate	27
+this	DETdetNOUN	study	27
+concentrate	VERBrev_nsubjNOUN	study	27
+27	ABOUT	study	27
+concentrate	VERB_PREDICATE_OF	27	27
+on	ADPcaseNOUN	aspect	27
+the	DETdetNOUN	aspect	27
+performance	NOUNcompoundNOUN	aspect	27
+performance	NOUNinCOMPOUND	performance aspect	27
+aspect	NOUNinCOMPOUND	performance aspect	27
+27	ABOUT	performance aspect	27
+concentrate	VERBrev_oblNOUN	aspect	27
+27	ABOUT	aspect	27
+of	ADPcaseNOUN	technology	27
+this	DETdetNOUN	technology	27
+technology	NOUNnmodNOUN	aspect	27
+rather	ADVccNOUN	issue	27
+than	ADPfixedADV	rather	27
+on	ADPcaseNOUN	issue	27
+its	PRONnmod:possNOUN	issue	27
+theoretical	ADJamodNOUN	issue	27
+or	CCONJccADJ	philosophical	27
+philosophical	ADJconjADJ	theoretical	27
+issue	NOUNconjNOUN	aspect	27
+.	PUNCTpunctVERB	concentrate	27
+as	ADVadvmodADV	early	28
+early	ADVadvmodVERB	envision	28
+as	ADPcaseNUM	1995	28
+1995	NUMoblADV	early	28
+,	PUNCTpunctVERB	envision	28
+envision	VERBrev_nsubjNOUN	researcher	28
+28	ABOUT	researcher	28
+envision	VERB_PREDICATE_OF	28	28
+shopping	NOUNcompoundNOUN	bot	28
+shopping	NOUNinCOMPOUND	shopping bot	28
+bot	NOUNinCOMPOUND	shopping bot	28
+28	ABOUT	shopping bot	28
+envision	VERBrev_objNOUN	bot	28
+28	ABOUT	bot	28
+as	ADPcaseNOUN	solution	28
+a	DETdetNOUN	solution	28
+envision	VERBrev_oblNOUN	solution	28
+28	ABOUT	solution	28
+for	SCONJmarkVERB	find	28
+find	VERBaclNOUN	solution	28
+find	VERBrev_objNOUN	product	28
+28	ABOUT	product	28
+under	ADPcaseNOUN	term	28
+the	DETdetNOUN	term	28
+best	ADJamodNOUN	term	28
+find	VERBrev_oblNOUN	term	28
+28	ABOUT	term	28
+from	ADPcaseNOUN	vendor	28
+online	ADJamodNOUN	vendor	28
+vendor	NOUNnmodNOUN	term	28
+when	ADVmarkNOUN	feature	28
+feature	NOUNrev_nsubjNOUN	price	28
+28	ABOUT	price	28
+be	AUXcopNOUN	feature	28
+typically	ADVadvmodNOUN	feature	28
+the	DETdetNOUN	feature	28
+most	ADVadvmodADJ	important	28
+important	ADJamodNOUN	feature	28
+feature	NOUNadvclVERB	envision	28
+.	PUNCTpunctVERB	envision	28
+a	DETdetNOUN	agent	29
+shopping	NOUNcompoundNOUN	agent	29
+shopping	NOUNinCOMPOUND	shopping agent	29
+agent	NOUNinCOMPOUND	shopping agent	29
+29	ABOUT	shopping agent	29
+query	VERBrev_nsubjNOUN	agent	29
+29	ABOUT	agent	29
+query	VERB_PREDICATE_OF	29	29
+multiple	ADJamodNOUN	site	29
+query	VERBrev_objNOUN	site	29
+29	ABOUT	site	29
+on	ADPcaseNOUN	behalf	29
+query	VERBrev_oblNOUN	behalf	29
+29	ABOUT	behalf	29
+of	ADPcaseNOUN	shopper	29
+a	DETdetNOUN	shopper	29
+shopper	NOUNnmodNOUN	behalf	29
+to	PARTmarkVERB	gather	29
+gather	VERBadvclVERB	query	29
+gather	VERBrev_objNOUN	pricing	29
+29	ABOUT	pricing	29
+and	CCONJccNOUN	information	29
+other	ADJamodNOUN	information	29
+information	NOUNconjNOUN	pricing	29
+on	ADPcaseNOUN	product	29
+product	NOUNnmodNOUN	information	29
+and	CCONJccNOUN	service	29
+service	NOUNconjNOUN	product	29
+.	PUNCTpunctVERB	query	29
+base	VERBrev_obl:npmodNOUN	client	30
+30	ABOUT	client	30
+-	PUNCTpunctVERB	base	30
+base	VERBamodNOUN	bot	30
+shopping	NOUNcompoundNOUN	bot	30
+shopping	NOUNinCOMPOUND	shopping bot	30
+bot	NOUNinCOMPOUND	shopping bot	30
+30	ABOUT	shopping bot	30
+achieve	VERBrev_nsubjNOUN	bot	30
+30	ABOUT	bot	30
+that	PRONnsubjVERB	appear	30
+appear	VERBacl:relclNOUN	bot	30
+in	ADPcaseNOUN	beginning	30
+the	DETdetNOUN	beginning	30
+appear	VERBrev_oblNOUN	beginning	30
+30	ABOUT	beginning	30
+of	ADPcaseNUM	1997	30
+1997	NUMnmodNOUN	beginning	30
+achieve	VERB_PREDICATE_OF	30	30
+that	SCONJmarkVERB	allow	30
+by	SCONJmarkVERB	allow	30
+allow	VERBadvclVERB	achieve	30
+allow	VERBrev_objNOUN	consumer	30
+30	ABOUT	consumer	30
+to	ADPcaseNOUN	comparisonshop	30
+allow	VERBrev_oblNOUN	comparisonshop	30
+30	ABOUT	comparisonshop	30
+online	ADVadvmodVERB	allow	30
+without	SCONJmarkVERB	visit	30
+actually	ADVadvmodVERB	visit	30
+visit	VERBadvclVERB	allow	30
+merchant	NOUNnmod:possNOUN	site	30
+'s	PARTcaseNOUN	merchant	30
+visit	VERBrev_objNOUN	site	30
+30	ABOUT	site	30
+to	PARTmarkVERB	locate	30
+locate	VERBadvclVERB	visit	30
+best	ADJamodNOUN	price	30
+locate	VERBrev_objNOUN	price	30
+30	ABOUT	price	30
+.	PUNCTpunctVERB	achieve	30
+the	DETdetNOUN	agent	31
+first	ADJamodNOUN	agent	31
+shopping	NOUNcompoundNOUN	agent	31
+shopping	NOUNinCOMPOUND	shopping agent	31
+agent	NOUNinCOMPOUND	shopping agent	31
+31	ABOUT	shopping agent	31
+develop	VERBrev_nsubj:passNOUN	agent	31
+31	ABOUT	agent	31
+(	PUNCTpunctPROPN	BargainFinder	31
+BargainFinder	PROPNapposNOUN	agent	31
+)	PUNCTpunctPROPN	BargainFinder	31
+be	AUXaux:passVERB	develop	31
+develop	VERB_PREDICATE_OF	31	31
+by	ADPcaseNOUN	firm	31
+the	DETdetNOUN	firm	31
+consulting	NOUNcompoundNOUN	firm	31
+consulting	NOUNinCOMPOUND	consulting firm	31
+firm	NOUNinCOMPOUND	consulting firm	31
+31	ABOUT	consulting firm	31
+develop	VERBrev_oblNOUN	firm	31
+31	ABOUT	firm	31
+Andersen	PROPNcompoundPROPN	Consulting	31
+Andersen	PROPNinCOMPOUND	Andersen Consulting	31
+Consulting	PROPNinCOMPOUND	Andersen Consulting	31
+31	ABOUT	Andersen Consulting	31
+Consulting	PROPNapposNOUN	firm	31
+in	ADPcaseNUM	1995	31
+1995	NUMoblVERB	develop	31
+.	PUNCTpunctVERB	develop	31
+it	PRONnsubjVERB	let	32
+let	VERB_PREDICATE_OF	32	32
+let	VERBrev_objNOUN	user	32
+32	ABOUT	user	32
+compare	VERBxcompVERB	let	32
+compare	VERBrev_objNOUN	price	32
+32	ABOUT	price	32
+of	ADPcaseNOUN	cd	32
+music	NOUNcompoundNOUN	cd	32
+music	NOUNinCOMPOUND	music cd	32
+cd	NOUNinCOMPOUND	music cd	32
+32	ABOUT	music cd	32
+cd	NOUNnmodNOUN	price	32
+from	ADPcaseNOUN	store	32
+internet	NOUNcompoundNOUN	store	32
+internet	NOUNinCOMPOUND	internet store	32
+store	NOUNinCOMPOUND	internet store	32
+32	ABOUT	internet store	32
+compare	VERBrev_oblNOUN	store	32
+32	ABOUT	store	32
+.	PUNCTpunctVERB	let	32
+however	ADVadvmodVERB	block	33
+,	PUNCTpunctVERB	block	33
+some	DETdetNOUN	retailer	33
+block	VERBrev_nsubjNOUN	retailer	33
+33	ABOUT	retailer	33
+block	VERB_PREDICATE_OF	33	33
+block	VERBrev_objNOUN	access	33
+33	ABOUT	access	33
+because	SCONJmarkVERB	want	33
+they	PRONnsubjVERB	want	33
+do	AUXauxVERB	want	33
+not	PARTadvmodVERB	want	33
+want	VERBadvclVERB	block	33
+to	PARTmarkVERB	compete	33
+compete	VERBxcompVERB	want	33
+purely	ADVadvmodVERB	compete	33
+on	ADPcaseNOUN	price	33
+compete	VERBrev_oblNOUN	price	33
+33	ABOUT	price	33
+,	PUNCTpunctVERB	cease	33
+and	CCONJccVERB	cease	33
+BargainFinder	PROPNnsubjVERB	cease	33
+cease	VERBconjVERB	block	33
+cease	VERBrev_objNOUN	operation	33
+33	ABOUT	operation	33
+.	PUNCTpunctVERB	block	33
+PersonaLogic	PROPNnsubjVERB	let	34
+,	PUNCTpunctPROPN	PersonaLogic	34
+another	DETdetNOUN	bot	34
+comparison	NOUNcompoundNOUN	shopping	34
+comparison	NOUNinCOMPOUND	comparison shopping	34
+shopping	NOUNinCOMPOUND	comparison shopping	34
+34	ABOUT	comparison shopping	34
+-	PUNCTpunctNOUN	shopping	34
+shopping	NOUNcompoundNOUN	bot	34
+shopping	NOUNinCOMPOUND	shopping bot	34
+bot	NOUNinCOMPOUND	shopping bot	34
+34	ABOUT	shopping bot	34
+bot	NOUNapposPROPN	PersonaLogic	34
+,	PUNCTpunctVERB	let	34
+let	VERB_PREDICATE_OF	34	34
+let	VERBrev_objNOUN	user	34
+34	ABOUT	user	34
+create	VERBxcompVERB	let	34
+personal	ADJamodNOUN	profile	34
+create	VERBrev_objNOUN	profile	34
+34	ABOUT	profile	34
+to	PARTmarkVERB	describe	34
+describe	VERBadvclVERB	create	34
+they	PRONnmod:possNOUN	preference	34
+describe	VERBrev_objNOUN	preference	34
+34	ABOUT	preference	34
+.	PUNCTpunctVERB	let	34
+this	DETdetNOUN	approach	35
+allow	VERBrev_nsubjNOUN	approach	35
+35	ABOUT	approach	35
+allow	VERB_PREDICATE_OF	35	35
+the	DETdetNOUN	bot	35
+allow	VERBrev_objNOUN	bot	35
+35	ABOUT	bot	35
+to	PARTmarkVERB	identify	35
+identify	VERBaclNOUN	bot	35
+identify	VERBrev_objNOUN	product	35
+35	ABOUT	product	35
+with	ADPcaseNOUN	feature	35
+feature	NOUNnmodNOUN	product	35
+that	PRONobjVERB	consider	35
+consider	VERBrev_nsubjNOUN	user	35
+35	ABOUT	user	35
+consider	VERBacl:relclNOUN	feature	35
+most	ADVadvmodADJ	important	35
+important	ADJxcompVERB	consider	35
+.	PUNCTpunctVERB	allow	35
+however	ADVadvmodVERB	have	36
+,	PUNCTpunctVERB	have	36
+have	VERBrev_nsubjNOUN	vendor	36
+36	ABOUT	vendor	36
+have	VERB_PREDICATE_OF	36	36
+to	PARTmarkVERB	provide	36
+provide	VERBxcompVERB	have	36
+provide	VERBrev_objNOUN	interface	36
+36	ABOUT	interface	36
+that	PRONnsubjVERB	disclose	36
+explicitly	ADVadvmodVERB	disclose	36
+disclose	VERBacl:relclNOUN	interface	36
+product	NOUNcompoundNOUN	feature	36
+product	NOUNinCOMPOUND	product feature	36
+feature	NOUNinCOMPOUND	product feature	36
+36	ABOUT	product feature	36
+disclose	VERBrev_objNOUN	feature	36
+36	ABOUT	feature	36
+so	SCONJmarkVERB	match	36
+that	SCONJfixedSCONJ	so	36
+PersonaLogic	PROPNnsubjVERB	match	36
+could	AUXauxVERB	match	36
+match	VERBadvclVERB	disclose	36
+they	PRONobjVERB	match	36
+with	ADPcaseNOUN	profile	36
+user	NOUNcompoundNOUN	profile	36
+user	NOUNinCOMPOUND	user profile	36
+profile	NOUNinCOMPOUND	user profile	36
+36	ABOUT	user profile	36
+match	VERBrev_oblNOUN	profile	36
+36	ABOUT	profile	36
+.	PUNCTpunctVERB	have	36
+AOL	PROPNnsubjVERB	acquire	37
+(	PUNCTpunctPROPN	Online	37
+America	PROPNcompoundPROPN	Online	37
+America	PROPNinCOMPOUND	America Online	37
+Online	PROPNinCOMPOUND	America Online	37
+37	ABOUT	America Online	37
+Online	PROPNapposPROPN	AOL	37
+)	PUNCTpunctPROPN	Online	37
+acquire	VERB_PREDICATE_OF	37	37
+PersonaLogic	PROPNobjVERB	acquire	37
+in	ADPcaseNUM	1998	37
+1998	NUMoblVERB	acquire	37
+,	PUNCTpunctVERB	disappear	37
+and	CCONJccVERB	disappear	37
+the	DETdetNOUN	technology	37
+disappear	VERBrev_nsubjNOUN	technology	37
+37	ABOUT	technology	37
+disappear	VERBconjVERB	acquire	37
+soon	ADVadvmodVERB	disappear	37
+after	ADPcasePRON	that	37
+that	PRONoblVERB	disappear	37
+.	PUNCTpunctVERB	acquire	37
+Ringo	PROPNnsubjNOUN	bot	38
+be	AUXcopNOUN	bot	38
+a	DETdetNOUN	bot	38
+bot	NOUN_PREDICATE_OF	38	38
+that	PRONnsubjVERB	recommend	38
+recommend	VERBacl:relclNOUN	bot	38
+entertainment	NOUNcompoundNOUN	product	38
+entertainment	NOUNinCOMPOUND	entertainment product	38
+product	NOUNinCOMPOUND	entertainment product	38
+38	ABOUT	entertainment product	38
+recommend	VERBrev_objNOUN	product	38
+38	ABOUT	product	38
+,	PUNCTpunctNOUN	product	38
+such	ADJcaseNOUN	cd	38
+as	ADPfixedADJ	such	38
+cd	NOUNnmodNOUN	product	38
+and	CCONJccNOUN	movie	38
+movie	NOUNconjNOUN	cd	38
+,	PUNCTpunctVERB	recommend	38
+on	ADPcaseNOUN	basis	38
+the	DETdetNOUN	basis	38
+recommend	VERBrev_oblNOUN	basis	38
+38	ABOUT	basis	38
+of	ADPcaseNOUN	filtering	38
+collaborative	ADJamodNOUN	filtering	38
+filtering	NOUNnmodNOUN	basis	38
+by	SCONJmarkVERB	use	38
+use	VERBaclNOUN	basis	38
+use	VERBrev_objNOUN	opinion	38
+38	ABOUT	opinion	38
+of	ADPcaseNOUN	user	38
+like	ADJamodADJ	minded	38
+-	PUNCTpunctADJ	minded	38
+minded	ADJamodNOUN	user	38
+user	NOUNnmodNOUN	opinion	38
+.	PUNCTpunctNOUN	bot	38
+collaborative	ADJamodNOUN	filtering	39
+imply	VERBrev_nsubjNOUN	filtering	39
+39	ABOUT	filtering	39
+imply	VERB_PREDICATE_OF	39	39
+make	VERBxcompVERB	imply	39
+automatic	ADJamodNOUN	prediction	39
+make	VERBrev_objNOUN	prediction	39
+39	ABOUT	prediction	39
+(	PUNCTpunctNOUN	filtering	39
+filtering	NOUNapposNOUN	prediction	39
+)	PUNCTpunctNOUN	filtering	39
+about	ADPcaseNOUN	interest	39
+the	DETdetNOUN	interest	39
+make	VERBrev_oblNOUN	interest	39
+39	ABOUT	interest	39
+of	ADPcaseNOUN	user	39
+a	DETdetNOUN	user	39
+user	NOUNnmodNOUN	interest	39
+by	SCONJmarkVERB	collect	39
+collect	VERBadvclVERB	make	39
+preference	NOUNcompoundNOUN	information	39
+preference	NOUNinCOMPOUND	preference information	39
+information	NOUNinCOMPOUND	preference information	39
+39	ABOUT	preference information	39
+collect	VERBrev_objNOUN	information	39
+39	ABOUT	information	39
+from	ADPcaseNOUN	user	39
+many	ADJamodNOUN	user	39
+collect	VERBrev_oblNOUN	user	39
+39	ABOUT	user	39
+(	PUNCTpunctVERB	collaborate	39
+collaborate	VERBadvclVERB	collect	39
+)	PUNCTpunctVERB	collaborate	39
+.	PUNCTpunctVERB	imply	39
+a	DETdetNOUN	assumption	40
+underlying	ADJamodNOUN	assumption	40
+be	VERBrev_nsubjNOUN	assumption	40
+40	ABOUT	assumption	40
+of	ADPcaseNOUN	approach	40
+collaborative	ADJamodNOUN	approach	40
+filtering	NOUNcompoundNOUN	approach	40
+filtering	NOUNinCOMPOUND	filtering approach	40
+approach	NOUNinCOMPOUND	filtering approach	40
+40	ABOUT	filtering approach	40
+approach	NOUNnmodNOUN	assumption	40
+be	VERB_PREDICATE_OF	40	40
+that	SCONJmarkVERB	tend	40
+those	PRONnsubjVERB	tend	40
+who	PRONnsubjVERB	agree	40
+agree	VERBacl:relclPRON	those	40
+in	ADPcaseNOUN	past	40
+the	DETdetNOUN	past	40
+agree	VERBrev_oblNOUN	past	40
+40	ABOUT	past	40
+tend	VERBccompVERB	be	40
+to	PARTmarkVERB	agree	40
+agree	VERBxcompVERB	tend	40
+again	ADVadvmodVERB	agree	40
+in	ADPcaseNOUN	future	40
+the	DETdetNOUN	future	40
+agree	VERBrev_oblNOUN	future	40
+40	ABOUT	future	40
+.	PUNCTpunctVERB	be	40
+for	ADPcaseNOUN	example	41
+make	VERBrev_oblNOUN	example	41
+41	ABOUT	example	41
+,	PUNCTpunctVERB	make	41
+a	DETdetNOUN	filtering	41
+collaborative	ADJamodNOUN	filtering	41
+make	VERBrev_nsubjNOUN	filtering	41
+41	ABOUT	filtering	41
+or	CCONJccNOUN	system	41
+recommendation	NOUNcompoundNOUN	system	41
+recommendation	NOUNinCOMPOUND	recommendation system	41
+system	NOUNinCOMPOUND	recommendation system	41
+41	ABOUT	recommendation system	41
+system	NOUNconjNOUN	filtering	41
+for	ADPcaseNOUN	preference	41
+music	NOUNcompoundNOUN	preference	41
+music	NOUNinCOMPOUND	music preference	41
+preference	NOUNinCOMPOUND	music preference	41
+41	ABOUT	music preference	41
+preference	NOUNnmodNOUN	system	41
+could	AUXauxVERB	make	41
+make	VERB_PREDICATE_OF	41	41
+make	VERBrev_objNOUN	prediction	41
+41	ABOUT	prediction	41
+about	ADPcaseNOUN	music	41
+which	DETdetNOUN	music	41
+music	NOUNnmodNOUN	prediction	41
+a	DETdetNOUN	user	41
+give	VERBrev_nsubjNOUN	user	41
+41	ABOUT	user	41
+should	AUXauxVERB	give	41
+like	AUXauxVERB	give	41
+give	VERBaclNOUN	prediction	41
+a	DETdetNOUN	list	41
+partial	ADJamodNOUN	list	41
+give	VERBrev_objNOUN	list	41
+41	ABOUT	list	41
+of	ADPcaseVERB	try	41
+that	DETdetNOUN	user	41
+user	NOUNnmod:possVERB	try	41
+'s	PARTcaseNOUN	user	41
+try	VERBaclNOUN	list	41
+before	ADVadvmodVERB	try	41
+(	PUNCTpunctNOUN	likes	41
+likes	NOUNapposVERB	try	41
+or	CCONJccNOUN	dislike	41
+dislike	NOUNconjNOUN	likes	41
+)	PUNCTpunctNOUN	likes	41
+.	PUNCTpunctVERB	make	41
+such	ADJamodNOUN	prediction	42
+specific	ADJrev_nsubjNOUN	prediction	42
+42	ABOUT	prediction	42
+be	AUXcopADJ	specific	42
+specific	ADJ_PREDICATE_OF	42	42
+to	ADPcaseNOUN	person	42
+the	DETdetNOUN	person	42
+specific	ADJrev_oblNOUN	person	42
+42	ABOUT	person	42
+,	PUNCTpunctVERB	use	42
+but	CCONJccVERB	use	42
+use	VERBconjADJ	specific	42
+use	VERBrev_objNOUN	information	42
+42	ABOUT	information	42
+glean	VERBaclNOUN	information	42
+from	ADPcaseNOUN	user	42
+many	ADJamodNOUN	user	42
+glean	VERBrev_oblNOUN	user	42
+42	ABOUT	user	42
+.	PUNCTpunctADJ	specific	42
+this	PRONnsubjVERB	differ	43
+differ	VERB_PREDICATE_OF	43	43
+from	ADPcaseNOUN	approach	43
+a	DETdetNOUN	approach	43
+more	ADVadvmodADJ	simple	43
+simple	ADJamodNOUN	approach	43
+differ	VERBrev_oblNOUN	approach	43
+43	ABOUT	approach	43
+of	SCONJmarkVERB	give	43
+give	VERBaclNOUN	approach	43
+a	DETdetNOUN	score	43
+give	VERBrev_objNOUN	average	43
+43	ABOUT	average	43
+(	PUNCTpunctNOUN	score	43
+non-specific	ADJamodNOUN	score	43
+)	PUNCTpunctNOUN	score	43
+give	VERBrev_objNOUN	score	43
+43	ABOUT	score	43
+for	ADPcaseNOUN	item	43
+each	DETdetNOUN	item	43
+give	VERBrev_oblNOUN	item	43
+43	ABOUT	item	43
+of	ADPcaseNOUN	interest	43
+interest	NOUNnmodNOUN	item	43
+,	PUNCTpunctVERB	give	43
+for	ADPcaseNOUN	example	43
+example	NOUNnmodNOUN	item	43
+base	VERBcaseNOUN	number	43
+on	ADPcaseNOUN	number	43
+its	PRONnmod:possNOUN	number	43
+give	VERBrev_oblNOUN	number	43
+43	ABOUT	number	43
+of	ADPcaseNOUN	vote	43
+vote	NOUNnmodNOUN	number	43
+.	PUNCTpunctVERB	differ	43
+this	PRONnsubjVERB	become	44
+become	VERB_PREDICATE_OF	44	44
+one	NUMxcompVERB	become	44
+of	ADPcaseNOUN	technology	44
+the	DETdetNOUN	technology	44
+earliest	ADJamodNOUN	technology	44
+commercialize	VERBamodNOUN	technology	44
+bot	NOUNcompoundNOUN	technology	44
+bot	NOUNinCOMPOUND	bot technology	44
+technology	NOUNinCOMPOUND	bot technology	44
+44	ABOUT	bot technology	44
+technology	NOUNnmodNUM	one	44
+when	ADVmarkVERB	evolve	44
+it	PRONnsubjVERB	evolve	44
+evolve	VERBadvclVERB	become	44
+into	ADPcasePROPN	FireFly	44
+FireFly	PROPNoblVERB	evolve	44
+.	PUNCTpunctNUM	one	44
+Microsoft	PROPNnsubjVERB	acquire	45
+acquire	VERB_PREDICATE_OF	45	45
+FireFly	PROPNcompoundPROPN	Inc.	45
+FireFly	PROPNinCOMPOUND	FireFly Inc.	45
+Inc.	PROPNinCOMPOUND	FireFly Inc.	45
+45	ABOUT	FireFly Inc.	45
+Network	PROPNcompoundPROPN	Inc.	45
+Network	PROPNinCOMPOUND	Network Inc.	45
+Inc.	PROPNinCOMPOUND	Network Inc.	45
+45	ABOUT	Network Inc.	45
+Inc.	PROPNobjVERB	acquire	45
+in	ADPcaseNUM	1998	45
+1998	NUMoblVERB	acquire	45
+,	PUNCTpunctVERB	cease	45
+and	CCONJccVERB	cease	45
+the	DETdetNOUN	bot	45
+FireFly	PROPNcompoundNOUN	bot	45
+FireFly	PROPNinCOMPOUND	FireFly bot	45
+bot	NOUNinCOMPOUND	FireFly bot	45
+45	ABOUT	FireFly bot	45
+cease	VERBrev_nsubjNOUN	bot	45
+45	ABOUT	bot	45
+cease	VERBconjVERB	acquire	45
+cease	VERBrev_objNOUN	operation	45
+45	ABOUT	operation	45
+shortly	ADVadvmodADV	thereafter	45
+thereafter	ADVadvmodVERB	cease	45
+.	PUNCTpunctVERB	acquire	45
+however	ADVadvmodVERB	become	46
+,	PUNCTpunctVERB	become	46
+collaborative	ADJamodNOUN	filtering	46
+become	VERBrev_nsubjNOUN	filtering	46
+46	ABOUT	filtering	46
+have	AUXauxVERB	become	46
+become	VERB_PREDICATE_OF	46	46
+a	DETdetNOUN	technique	46
+common	ADJamodNOUN	technique	46
+technique	NOUNxcompVERB	become	46
+nowadays	ADVadvmodNOUN	technique	46
+;	PUNCTpunctNOUN	technique	46
+for	ADPcaseNOUN	example	46
+example	NOUNnmodNOUN	vendor	46
+large	ADJamodNOUN	vendor	46
+commercial	ADJamodNOUN	vendor	46
+vendor	NOUNnmodNOUN	technique	46
+such	ADJmarkVERB	use	46
+as	SCONJfixedADJ	such	46
+Amazon	PROPNnsubjVERB	use	46
+use	VERBaclNOUN	vendor	46
+it	PRONobjVERB	use	46
+,	PUNCTpunctVERB	use	46
+although	SCONJmarkNOUN	way	46
+in	ADPcaseNOUN	way	46
+simplify	VERBamodNOUN	way	46
+use	VERBrev_oblNOUN	way	46
+46	ABOUT	way	46
+.	PUNCTpunctNOUN	technique	46
+ShopBot	PROPNnsubjVERB	submit	47
+,	PUNCTpunctPROPN	ShopBot	47
+another	DETdetNOUN	engine	47
+price	NOUNcompoundNOUN	engine	47
+price	NOUNinCOMPOUND	price engine	47
+engine	NOUNinCOMPOUND	price engine	47
+47	ABOUT	price engine	47
+comparison	NOUNcompoundNOUN	engine	47
+comparison	NOUNinCOMPOUND	comparison engine	47
+engine	NOUNinCOMPOUND	comparison engine	47
+47	ABOUT	comparison engine	47
+engine	NOUNapposPROPN	ShopBot	47
+,	PUNCTpunctVERB	submit	47
+could	AUXauxVERB	submit	47
+submit	VERB_PREDICATE_OF	47	47
+submit	VERBrev_objNOUN	query	47
+47	ABOUT	query	47
+to	ADPcaseNOUN	site	47
+e-commerce	NOUNcompoundNOUN	site	47
+e-commerce	NOUNinCOMPOUND	e-commerce site	47
+site	NOUNinCOMPOUND	e-commerce site	47
+47	ABOUT	e-commerce site	47
+site	NOUNnmodNOUN	query	47
+and	CCONJccVERB	interpret	47
+interpret	VERBconjVERB	submit	47
+the	DETdetNOUN	hit	47
+result	VERBamodNOUN	hit	47
+interpret	VERBrev_objNOUN	hit	47
+47	ABOUT	hit	47
+to	PARTmarkVERB	identify	47
+identify	VERBadvclVERB	interpret	47
+lowest	ADJamodNOUN	price	47
+-	PUNCTpunctNOUN	price	47
+price	NOUNcompoundNOUN	item	47
+price	NOUNinCOMPOUND	price item	47
+item	NOUNinCOMPOUND	price item	47
+47	ABOUT	price item	47
+identify	VERBrev_objNOUN	item	47
+47	ABOUT	item	47
+.	PUNCTpunctVERB	submit	47
+ShopBot	PROPNnsubjVERB	automated	48
+automated	VERB_PREDICATE_OF	48	48
+the	DETdetNOUN	building	48
+automated	VERBrev_objNOUN	building	48
+48	ABOUT	building	48
+of	ADPcaseNOUN	wrapper	48
+""""	PUNCTpunctNOUN	wrapper	48
+wrapper	NOUNnmodNOUN	building	48
+""""	PUNCTpunctNOUN	wrapper	48
+to	PARTmarkVERB	parse	48
+parse	VERBadvclVERB	automated	48
+semi-structure	VERBamodNOUN	document	48
+html	NOUNcompoundNOUN	document	48
+html	NOUNinCOMPOUND	html document	48
+document	NOUNinCOMPOUND	html document	48
+48	ABOUT	html document	48
+parse	VERBrev_objNOUN	document	48
+48	ABOUT	document	48
+and	CCONJccVERB	extract	48
+extract	VERBconjVERB	parse	48
+extract	VERBrev_objNOUN	feature	48
+48	ABOUT	feature	48
+,	PUNCTpunctNOUN	feature	48
+such	ADJcaseNOUN	description	48
+as	ADPfixedADJ	such	48
+product	NOUNcompoundNOUN	description	48
+product	NOUNinCOMPOUND	product description	48
+description	NOUNinCOMPOUND	product description	48
+48	ABOUT	product description	48
+description	NOUNnmodNOUN	feature	48
+and	CCONJccNOUN	price	48
+price	NOUNconjNOUN	description	48
+.	PUNCTpunctVERB	automated	48
+the	DETdetNOUN	process	49
+entail	VERBrev_nsubjNOUN	process	49
+49	ABOUT	process	49
+would	AUXauxVERB	entail	49
+entail	VERB_PREDICATE_OF	49	49
+wrap	VERBxcompVERB	entail	49
+treatment	NOUNcompoundNOUN	learner	49
+treatment	NOUNinCOMPOUND	treatment learner	49
+learner	NOUNinCOMPOUND	treatment learner	49
+49	ABOUT	treatment learner	49
+wrap	VERBrev_objNOUN	learner	49
+49	ABOUT	learner	49
+(	PUNCTpunctNOUN	program	49
+program	NOUNapposNOUN	learner	49
+use	VERBaclNOUN	program	49
+to	PARTmarkVERB	find	49
+find	VERBxcompVERB	use	49
+find	VERBrev_objNOUN	rule	49
+49	ABOUT	rule	49
+that	PRONnsubjVERB	change	49
+change	VERBacl:relclNOUN	rule	49
+the	DETdetNOUN	distribution	49
+expect	VERBamodNOUN	distribution	49
+class	NOUNcompoundNOUN	distribution	49
+class	NOUNinCOMPOUND	class distribution	49
+distribution	NOUNinCOMPOUND	class distribution	49
+49	ABOUT	class distribution	49
+change	VERBrev_objNOUN	distribution	49
+49	ABOUT	distribution	49
+compare	VERBcaseNOUN	baseline	49
+to	ADPcaseNOUN	baseline	49
+some	DETdetNOUN	baseline	49
+change	VERBrev_oblNOUN	baseline	49
+49	ABOUT	baseline	49
+)	PUNCTpunctVERB	change	49
+in	ADPcaseNOUN	preprocessor	49
+a	DETdetNOUN	preprocessor	49
+change	VERBrev_oblNOUN	preprocessor	49
+49	ABOUT	preprocessor	49
+that	PRONnsubjVERB	search	49
+would	AUXauxVERB	search	49
+search	VERBacl:relclNOUN	preprocessor	49
+to	PARTmarkVERB	make	49
+make	VERBadvclVERB	search	49
+make	VERBrev_objNOUN	subset	49
+49	ABOUT	subset	49
+from	ADPcaseNOUN	set	49
+the	DETdetNOUN	set	49
+current	ADJamodNOUN	set	49
+make	VERBrev_oblNOUN	set	49
+49	ABOUT	set	49
+of	ADPcaseNOUN	attribute	49
+attribute	NOUNnmodNOUN	set	49
+.	PUNCTpunctVERB	entail	49
+the	DETdetNOUN	subset	50
+attribute	NOUNcompoundNOUN	subset	50
+attribute	NOUNinCOMPOUND	attribute subset	50
+subset	NOUNinCOMPOUND	attribute subset	50
+50	ABOUT	attribute subset	50
+continue	VERBrev_nsubjNOUN	subset	50
+50	ABOUT	subset	50
+would	AUXauxVERB	continue	50
+continue	VERB_PREDICATE_OF	50	50
+to	PARTmarkVERB	grow	50
+grow	VERBxcompVERB	continue	50
+until	SCONJmarkADJ	accurate	50
+the	DETdetNOUN	accuracy	50
+accurate	ADJrev_nsubjNOUN	accuracy	50
+50	ABOUT	accuracy	50
+of	ADPcaseNOUN	model	50
+the	DETdetNOUN	model	50
+model	NOUNnmodNOUN	accuracy	50
+be	AUXcopADJ	accurate	50
+no	ADVadvmodADV	longer	50
+longer	ADVadvmodADV	more	50
+more	ADVadvmodADJ	accurate	50
+accurate	ADJadvclVERB	grow	50
+.	PUNCTpunctVERB	continue	50
+transform	VERBrev_nsubjNOUN	parsing	51
+51	ABOUT	parsing	51
+transform	VERB_PREDICATE_OF	51	51
+input	NOUNcompoundNOUN	text	51
+input	NOUNinCOMPOUND	input text	51
+text	NOUNinCOMPOUND	input text	51
+51	ABOUT	input text	51
+transform	VERBrev_objNOUN	text	51
+51	ABOUT	text	51
+into	ADPcaseNOUN	structure	51
+a	DETdetNOUN	structure	51
+data	NOUNcompoundNOUN	structure	51
+data	NOUNinCOMPOUND	data structure	51
+structure	NOUNinCOMPOUND	data structure	51
+51	ABOUT	data structure	51
+transform	VERBrev_oblNOUN	structure	51
+51	ABOUT	structure	51
+,	PUNCTpunctNOUN	structure	51
+usually	ADVadvmodNOUN	tree	51
+a	DETdetNOUN	tree	51
+tree	NOUNapposNOUN	structure	51
+,	PUNCTpunctNOUN	tree	51
+which	PRONnsubjADJ	suitable	51
+be	AUXcopADJ	suitable	51
+suitable	ADJacl:relclNOUN	tree	51
+for	ADPcaseNOUN	processing	51
+later	ADJamodNOUN	processing	51
+suitable	ADJrev_oblNOUN	processing	51
+51	ABOUT	processing	51
+and	CCONJccVERB	capture	51
+which	PRONnsubjVERB	capture	51
+capture	VERBacl:relclNOUN	processing	51
+the	DETdetNOUN	hierarchy	51
+imply	VERBamodNOUN	hierarchy	51
+capture	VERBrev_objNOUN	hierarchy	51
+51	ABOUT	hierarchy	51
+of	ADPcaseNOUN	input	51
+the	DETdetNOUN	input	51
+input	NOUNnmodNOUN	hierarchy	51
+.	PUNCTpunctVERB	transform	51
+the	DETdetNOUN	method	52
+overall	ADJamodNOUN	method	52
+yield	VERBrev_nsubjNOUN	method	52
+52	ABOUT	method	52
+when	ADVmarkVERB	apply	52
+apply	VERBaclNOUN	method	52
+to	ADPcaseNOUN	set	52
+data	NOUNcompoundNOUN	set	52
+data	NOUNinCOMPOUND	data set	52
+set	NOUNinCOMPOUND	data set	52
+52	ABOUT	data set	52
+apply	VERBrev_oblNOUN	set	52
+52	ABOUT	set	52
+from	ADPcaseNOUN	website	52
+evendor	NOUNnmod:possNOUN	website	52
+'s	PARTcaseNOUN	evendor	52
+website	NOUNnmodNOUN	set	52
+would	AUXauxVERB	yield	52
+yield	VERB_PREDICATE_OF	52	52
+a	DETdetNOUN	document	52
+html	NOUNcompoundNOUN	document	52
+html	NOUNinCOMPOUND	html document	52
+document	NOUNinCOMPOUND	html document	52
+52	ABOUT	html document	52
+yield	VERBrev_objNOUN	document	52
+52	ABOUT	document	52
+with	ADPcaseNOUN	set	52
+the	DETdetNOUN	set	52
+specify	VERBamodNOUN	set	52
+attribute	NOUNcompoundNOUN	set	52
+attribute	NOUNinCOMPOUND	attribute set	52
+set	NOUNinCOMPOUND	attribute set	52
+52	ABOUT	attribute set	52
+set	NOUNnmodNOUN	document	52
+extract	VERBaclNOUN	set	52
+from	ADPcaseNOUN	website	52
+such	ADJamodNOUN	website	52
+extract	VERBrev_oblNOUN	website	52
+52	ABOUT	website	52
+.	PUNCTpunctVERB	yield	52
+despite	ADPcaseNOUN	usage	53
+the	DETdetNOUN	usage	53
+similar	ADJrev_oblNOUN	usage	53
+53	ABOUT	usage	53
+of	ADPcaseNOUN	wrapper	53
+wrapper	NOUNnmodNOUN	usage	53
+,	PUNCTpunctADJ	similar	53
+the	DETdetNOUN	technology	53
+ShopBot	PROPNcompoundNOUN	technology	53
+ShopBot	PROPNinCOMPOUND	ShopBot technology	53
+technology	NOUNinCOMPOUND	ShopBot technology	53
+53	ABOUT	ShopBot technology	53
+technology	NOUNnmod:possNOUN	fate	53
+'s	PARTcaseNOUN	technology	53
+similar	ADJrev_nsubjNOUN	fate	53
+53	ABOUT	fate	53
+be	AUXcopADJ	similar	53
+similar	ADJ_PREDICATE_OF	53	53
+to	ADPcasePRON	those	53
+those	PRONoblADJ	similar	53
+of	ADPcasePROPN	PersonaLogic	53
+PersonaLogic	PROPNnmodPRON	those	53
+and	CCONJccPROPN	FireFly	53
+FireFly	PROPNconjPROPN	PersonaLogic	53
+.	PUNCTpunctADJ	similar	53
+excite	VERB_PREDICATE_OF	54	54
+acquire	VERBxcompVERB	excite	54
+and	CCONJccVERB	commercialize	54
+commercialize	VERBconjVERB	excite	54
+it	PRONobjVERB	commercialize	54
+under	ADPcaseNOUN	name	54
+the	DETdetNOUN	name	54
+commercialize	VERBrev_oblNOUN	name	54
+54	ABOUT	name	54
+Jango	PROPNoblVERB	commercialize	54
+but	CCONJccVERB	replace	54
+soon	ADVadvmodVERB	replace	54
+replace	VERBconjVERB	excite	54
+it	PRONobjVERB	replace	54
+with	ADPcaseNOUN	agent	54
+a	DETdetNOUN	agent	54
+biased	ADJamodNOUN	agent	54
+vendor	NOUNcompoundVERB	drive	54
+vendor	NOUNinCOMPOUND	vendor drive	54
+drive	VERBinCOMPOUND	vendor drive	54
+54	ABOUT	vendor drive	54
+-	PUNCTpunctVERB	drive	54
+drive	VERBamodNOUN	agent	54
+replace	VERBrev_oblNOUN	agent	54
+54	ABOUT	agent	54
+.	PUNCTpunctVERB	excite	54
+Tete@	PROPN_PREDICATE_OF	55	55
+Tete	PROPNnsubjNOUN	bot	56
+be	AUXcopNOUN	bot	56
+a	DETdetNOUN	bot	56
+bot	NOUN_PREDICATE_OF	56	56
+that	PRONnsubjVERB	integrate	56
+integrate	VERBacl:relclNOUN	bot	56
+product	NOUNcompoundNOUN	brokering	56
+product	NOUNinCOMPOUND	product brokering	56
+brokering	NOUNinCOMPOUND	product brokering	56
+56	ABOUT	product brokering	56
+integrate	VERBrev_objNOUN	brokering	56
+56	ABOUT	brokering	56
+,	PUNCTpunctNOUN	brokering	56
+merchant	NOUNcompoundNOUN	brokering	56
+merchant	NOUNinCOMPOUND	merchant brokering	56
+brokering	NOUNinCOMPOUND	merchant brokering	56
+56	ABOUT	merchant brokering	56
+brokering	NOUNconjNOUN	brokering	56
+,	PUNCTpunctNOUN	negotiation	56
+and	CCONJccNOUN	negotiation	56
+negotiation	NOUNconjNOUN	brokering	56
+.	PUNCTpunctNOUN	bot	56
+a	DETdetNOUN	up	57
+start	NOUNcompoundNOUN	up	57
+start	NOUNinCOMPOUND	start up	57
+up	NOUNinCOMPOUND	start up	57
+57	ABOUT	start up	57
+-	PUNCTpunctNOUN	up	57
+apply	VERBrev_nsubjNOUN	up	57
+57	ABOUT	up	57
+call	VERBaclNOUN	up	57
+Frictionless	PROPNcompoundPROPN	Commerce	57
+Frictionless	PROPNinCOMPOUND	Frictionless Commerce	57
+Commerce	PROPNinCOMPOUND	Frictionless Commerce	57
+57	ABOUT	Frictionless Commerce	57
+Commerce	PROPNxcompVERB	call	57
+apply	VERB_PREDICATE_OF	57	57
+the	DETdetNOUN	technology	57
+apply	VERBrev_objNOUN	technology	57
+57	ABOUT	technology	57
+to	ADPcaseNOUN	business	57
+business	NOUNcompoundNOUN	business	57
+business	NOUNinCOMPOUND	business business	57
+business	NOUNinCOMPOUND	business business	57
+57	ABOUT	business business	57
+-	PUNCTpunctNOUN	business	57
+to	ADPcaseNOUN	business	57
+-	PUNCTpunctNOUN	business	57
+apply	VERBrev_oblNOUN	business	57
+57	ABOUT	business	57
+rather	ADVccNOUN	market	57
+than	ADPfixedADV	rather	57
+to	ADPfixedADV	rather	57
+business	NOUNcompoundNOUN	market	57
+business	NOUNinCOMPOUND	business market	57
+market	NOUNinCOMPOUND	business market	57
+57	ABOUT	business market	57
+-	PUNCTpunctNOUN	business	57
+to	ADPcaseNOUN	customer	57
+-	PUNCTpunctNOUN	customer	57
+customer	NOUNnmodNOUN	business	57
+market	NOUNconjNOUN	business	57
+.	PUNCTpunctVERB	apply	57
+most	ADJnsubjVERB	present	58
+of	ADPcaseNOUN	agent	58
+the	DETdetNOUN	agent	58
+comparison	NOUNcompoundNOUN	shopping	58
+comparison	NOUNinCOMPOUND	comparison shopping	58
+shopping	NOUNinCOMPOUND	comparison shopping	58
+58	ABOUT	comparison shopping	58
+-	PUNCTpunctNOUN	shopping	58
+shopping	NOUNcompoundNOUN	agent	58
+shopping	NOUNinCOMPOUND	shopping agent	58
+agent	NOUNinCOMPOUND	shopping agent	58
+58	ABOUT	shopping agent	58
+agent	NOUNnmodADJ	most	58
+available	ADJamodNOUN	agent	58
+to	ADPcaseNOUN	consumer	58
+available	ADJrev_oblNOUN	consumer	58
+58	ABOUT	consumer	58
+such	ADJcasePROPN	MySimon	58
+as	ADPfixedADJ	such	58
+MySimon	PROPNnmodNOUN	consumer	58
+,	PUNCTpunctPROPN	DealTime	58
+DealTime	PROPNconjPROPN	MySimon	58
+and	CCONJccPROPN	RoboShopper	58
+RoboShopper	PROPNconjPROPN	MySimon	58
+,	PUNCTpunctVERB	present	58
+present	VERB_PREDICATE_OF	58	58
+present	VERBrev_objNOUN	result	58
+58	ABOUT	result	58
+only	ADVadvmodNOUN	company	58
+from	ADPcaseNOUN	company	58
+partner	NOUNcompoundNOUN	company	58
+partner	NOUNinCOMPOUND	partner company	58
+company	NOUNinCOMPOUND	partner company	58
+58	ABOUT	partner company	58
+company	NOUNnmodNOUN	result	58
+who	PRONnsubjVERB	pay	58
+pay	VERBacl:relclNOUN	company	58
+service	NOUNcompoundNOUN	fee	58
+service	NOUNinCOMPOUND	service fee	58
+fee	NOUNinCOMPOUND	service fee	58
+58	ABOUT	service fee	58
+subscription	NOUNcompoundNOUN	fee	58
+subscription	NOUNinCOMPOUND	subscription fee	58
+fee	NOUNinCOMPOUND	subscription fee	58
+58	ABOUT	subscription fee	58
+pay	VERBrev_objNOUN	fee	58
+58	ABOUT	fee	58
+.	PUNCTpunctVERB	present	58
+most	ADJamodNOUN	model	59
+current	ADJamodNOUN	model	59
+business	NOUNcompoundNOUN	model	59
+business	NOUNinCOMPOUND	business model	59
+model	NOUNinCOMPOUND	business model	59
+59	ABOUT	business model	59
+base	VERBrev_nsubj:passNOUN	model	59
+59	ABOUT	model	59
+be	AUXaux:passVERB	base	59
+base	VERB_PREDICATE_OF	59	59
+on	ADPcaseNOUN	vendor	59
+base	VERBrev_oblNOUN	vendor	59
+59	ABOUT	vendor	59
+rather	ADVccNOUN	revenue	59
+than	ADPfixedADV	rather	59
+buyer	NOUNcompoundNOUN	revenue	59
+buyer	NOUNinCOMPOUND	buyer revenue	59
+revenue	NOUNinCOMPOUND	buyer revenue	59
+59	ABOUT	buyer revenue	59
+revenue	NOUNconjNOUN	vendor	59
+,	PUNCTpunctVERB	base	59
+because	SCONJmarkADJ	reluctant	59
+reluctant	ADJrev_nsubjNOUN	user	59
+59	ABOUT	user	59
+be	AUXcopADJ	reluctant	59
+reluctant	ADJadvclVERB	base	59
+to	PARTmarkVERB	pay	59
+pay	VERBxcompADJ	reluctant	59
+pay	VERBrev_objNOUN	fee	59
+59	ABOUT	fee	59
+for	ADPcaseNOUN	service	59
+these	DETdetNOUN	service	59
+service	NOUNnmodNOUN	fee	59
+.	PUNCTpunctVERB	base	59
+however	ADVadvmodVERB	produce	60
+,	PUNCTpunctVERB	produce	60
+a	DETdetNOUN	model	60
+vendor	NOUNcompoundVERB	base	60
+vendor	NOUNinCOMPOUND	vendor base	60
+base	VERBinCOMPOUND	vendor base	60
+60	ABOUT	vendor base	60
+-	PUNCTpunctVERB	base	60
+base	VERBamodNOUN	model	60
+revenue	NOUNcompoundNOUN	model	60
+revenue	NOUNinCOMPOUND	revenue model	60
+model	NOUNinCOMPOUND	revenue model	60
+60	ABOUT	revenue model	60
+produce	VERBrev_nsubjNOUN	model	60
+60	ABOUT	model	60
+still	ADVadvmodVERB	produce	60
+produce	VERB_PREDICATE_OF	60	60
+hidden	ADJamodNOUN	cost	60
+produce	VERBrev_objNOUN	cost	60
+60	ABOUT	cost	60
+such	ADJcaseNOUN	price	60
+as	ADPfixedADJ	such	60
+higher	ADJamodNOUN	price	60
+price	NOUNnmodNOUN	cost	60
+,	PUNCTpunctNOUN	choice	60
+limited	ADJamodNOUN	choice	60
+choice	NOUNconjNOUN	price	60
+,	PUNCTpunctNOUN	service	60
+and	CCONJccNOUN	service	60
+poor	ADJamodNOUN	service	60
+service	NOUNconjNOUN	price	60
+.	PUNCTpunctVERB	produce	60
+in	ADPcaseNOUN	context	61
+this	DETdetNOUN	context	61
+understandable	ADJrev_oblNOUN	context	61
+61	ABOUT	context	61
+,	PUNCTpunctADJ	understandable	61
+the	DETdetNOUN	vendor	61
+establish	VERBamodNOUN	vendor	61
+vendor	NOUNnmod:possNOUN	reluctance	61
+'s	PARTcaseNOUN	vendor	61
+understandable	ADJrev_nsubjNOUN	reluctance	61
+61	ABOUT	reluctance	61
+to	ADPcaseNOUN	bot	61
+shopping	NOUNcompoundNOUN	bot	61
+shopping	NOUNinCOMPOUND	shopping bot	61
+bot	NOUNinCOMPOUND	shopping bot	61
+61	ABOUT	shopping bot	61
+bot	NOUNnmodNOUN	reluctance	61
+be	AUXcopADJ	understandable	61
+certainly	ADVadvmodADJ	understandable	61
+understandable	ADJ_PREDICATE_OF	61	61
+.	PUNCTpunctADJ	understandable	61

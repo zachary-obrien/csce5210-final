@@ -21,7 +21,7 @@ class Data :
   links are of the form POS_deprelPOS wuth POS and deprel
   tags concatenated
   '''
-  def __init__(self,fname='texts/english') :
+  def __init__(self,fname='texts/shopping_bot') :
     wss = tsv2mat("out/"+fname+".tsv")
     self.sents=tsv2mat("out/"+fname+"_sents.tsv")
     occs=defaultdict(set)
@@ -67,7 +67,7 @@ class Query(Data) :
   text query and matches it against data to retrive
   sentences in which most of those edges occur
   '''
-  def __init__(self,fname='texts/english'):
+  def __init__(self,fname='texts/shopping_bot'):
     super().__init__(fname=fname)
     self.nlp_engine=nlp.NLP()
 
@@ -95,7 +95,7 @@ class Inferencer(Query) :
   loads model trained on associating dependency
   edges to sentences in which they occur
   '''
-  def __init__(self,fname='texts/english'):
+  def __init__(self,fname='texts/shopping_bot'):
     super().__init__(fname=fname)
     self.model = load_model(fname+"_model")
 
@@ -117,7 +117,7 @@ class Trainer(Data) :
   '''
   neural network trainer and model builder
   '''
-  def __init__(self,fname='texts/english'):
+  def __init__(self,fname='texts/shopping_bot'):
     super().__init__(fname=fname)
     # model = keras.Sequential()
     model = keras.Sequential()
@@ -178,7 +178,7 @@ def dtest() :
   print(d.hot_y)
 
 def dtests():
-  dtest('out/texts/english.tsv')
+  dtest('out/texts/shopping_bot.tsv')
   #dtest('out/texts/const.tsv')
   #dtest('out/texts/spanish.tsv')
   #dtest('out/texts/chinese.tsv')
