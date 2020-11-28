@@ -119,24 +119,16 @@ class Trainer(Data) :
   '''
   def __init__(self,fname='texts/shopping_bot'):
     super().__init__(fname=fname)
-    # model = keras.Sequential()
+
+
     model = keras.Sequential()
-    # Add an Embedding layer expecting input vocab of size 1000, and
-    # output embedding dimension of size 64.
-    model.add(layers.Embedding(input_dim=self.hot_X.shape[1], output_dim=128))
-
-    # Add a LSTM layer with 128 internal units.
-    model.add(layers.LSTM(128))
-
-    # Add a Dense layer with 10 units.
-    model.add(layers.Dense(18))
-
+    model.add(layers.Embedding(input_dim=self.hot_X.shape[1], output_dim=self.hot_X.shape[1]))
+    model.add(layers.LSTM(10,return_sequences=True,activation='relu'))
+    model.add(layers.LSTM(10, activation='relu'))
+    model.add(layers.Dense(self.hot_y.shape[1], activation='sigmoid'))
     model.summary()
-    # model.add(layers.Dense(128, input_dim=self.hot_X.shape[1], activation='relu'))
-    # model.add(layers.Dense(self.hot_y.shape[1], activation='sigmoid'))
-    # model.summary()
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-    history = model.fit(self.hot_X, self.hot_y, epochs=10, batch_size=16)
+    history = model.fit(self.hot_X, self.hot_y, epochs=3, batch_size=16)
 
     model.save(fname+"_model")
 
@@ -146,6 +138,7 @@ class Trainer(Data) :
 
     loss, accuracy = model.evaluate(self.hot_X, self.hot_y)
     print('Accuracy:', round(100 * accuracy, 2), ', % Loss:', round(100 * loss, 2), '%')
+    exit()
 
 
 # VISUALS
@@ -189,12 +182,47 @@ def ntest() :
   i=Inferencer()
   print("\n\n")
   print("ALGORITHMICALLY DERIVED ANSWERS:\n")
-  i.ask("What did Penrose show about black holes?")
-  i.ask(text="What was in Roger's 1965 paper?")
+
+
+  i.ask("When are shopping bots used?")
+  i.ask("How do you use shopping bots?")
+  i.ask("What are client-based shopping bots?")
+  i.ask("What is a difference between server-based and client-based solutions?")
+  i.ask("What are the three ways used to provide shopping bot services?")
+  i.ask("How are shopping bots used in the centralized approach?")
+  i.ask("How are shopping bots used in the broker agent approach?")
+  i.ask("What can a mobile agent be used to do?")
+  i.ask("why are current business models ae based on vendor revenue?")
+  i.ask("What was the purpose of the bot named 'Tete@Tete'?")
+
+
+  # i.ask("What did Penrose show about black holes?")
+  # i.ask(text="What was in Roger's 1965 paper?")
+
   print("\n")
   print("NEURAL NET'S ANSWERS:\n")
-  i.query("What did Penrose show about black holes?")
-  i.query(text="What was in Roger's 1965 paper?")
+  i.query("When are shopping bots used?")
+  i.query("How do you use shopping bots?")
+  i.query("What are server-based shopping bots?")
+  i.query("What are client-based shopping bots?")
+  i.query("What is a difference between server-based and client-based solutions?")
+  i.query("What are the three ways used to provide shopping bot services?")
+  i.query("How are shopping bots used in the centralized approach?")
+  i.query("What does collaborative filtering imply?")
+  i.query("why are current business models ae based on vendor revenue?")
+  i.query("What was the purpose of Tete@Tete?")
 
+  i.query("How do you use shopping bots?")
+  i.query("What are client-based shopping bots?")
+  i.query("What is a difference between server-based and client-based solutions?")
+  i.query("What are the three ways used to provide shopping bot services?")
+  i.query("How are shopping bots used in the centralized approach?")
+  i.query("How are shopping bots used in the broker agent approach?")
+  i.query("What does collaborative filtering imply?")
+  i.query("why are current business models ae based on vendor revenue?")
+  i.query("What was the purpose of the bot named 'Tete@Tete'?")
+
+  # i.query("What did Penrose show about black holes?")
+  # i.query(text="What was in Roger's 1965 paper?")
 if __name__=="__main__" :
   ntest()
