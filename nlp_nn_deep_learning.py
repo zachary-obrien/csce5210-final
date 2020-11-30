@@ -7,6 +7,7 @@ from collections import defaultdict, Counter
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import load_model
+from keras.callbacks import EarlyStopping, ModelCheckpoint
 
 # turns .tsv file into list of lists
 def tsv2mat(fname) :
@@ -120,25 +121,42 @@ class Trainer(Data) :
   def __init__(self,fname='texts/shopping_bot'):
     super().__init__(fname=fname)
 
+    lstm_node_counts = [1, 5, 10, 15, 20, 25, 35, 50, 70, 100]
+    num_epochs = [1, 3, 5, 10, 25]
+    layer_results = []
+    for num_nodes in lstm_node_counts:
+      for epochs in num_epochs:
+        for attempt_num in range(1,10):
+          single_fname = fname + "_" + str(attempt_num)
+          checkpoint_name = single_fname + '/best_model.h5'
+          callbacks = [EarlyStopping(monitor='accuracy', patience=5),
+                       ModelCheckpoint(filepath=checkpoint_name, monitor='accuracy', save_best_only=True)]
 
-    model = keras.Sequential()
-    model.add(layers.Embedding(input_dim=self.hot_X.shape[1], output_dim=self.hot_X.shape[1]))
-    model.add(layers.LSTM(10,return_sequences=True,activation='relu'))
-    model.add(layers.LSTM(10, activation='relu'))
-    model.add(layers.Dense(self.hot_y.shape[1], activation='sigmoid'))
-    model.summary()
-    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-    history = model.fit(self.hot_X, self.hot_y, epochs=3, batch_size=16)
+          model = keras.Sequential()
+          model.add(layers.Embedding(input_dim=self.hot_X.shape[1], output_dim=self.hot_X.shape[1]))
+          #model.add(layers.LSTM(10,return_sequences=True,activation='relu'))
+          model.add(layers.LSTM(num_nodes, activation='relu'))
+          model.add(layers.Dense(self.hot_y.shape[1], activation='sigmoid'))
+          model.summary()
+          model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+          history = model.fit(self.hot_X, self.hot_y, epochs=epochs, batch_size=128, callbacks=callbacks)
 
-    model.save(fname+"_model")
 
-    # visualize and inform about accuracy and loss
-    plot_graphs(fname + "_loss", history, 'loss')
-    plot_graphs(fname + "_acc", history, 'accuracy')
+          model.save(single_fname+"_model")
 
-    loss, accuracy = model.evaluate(self.hot_X, self.hot_y)
-    print('Accuracy:', round(100 * accuracy, 2), ', % Loss:', round(100 * loss, 2), '%')
+          # visualize and inform about accuracy and loss
+          plot_graphs(single_fname + "_loss", history, 'loss')
+          plot_graphs(single_fname + "_acc", history, 'accuracy')
 
+          loss, accuracy = model.evaluate(self.hot_X, self.hot_y)
+          print('Accuracy:', round(100 * accuracy, 2), ', % Loss:', round(100 * loss, 2), '%')
+          results = ''.join(['Attempt: ', str(attempt_num), ' Accuracy: ', str(round(100 * accuracy, 2)), ', % Loss: ', str(round(100 * loss, 2)), '%'])
+          layer_results.append(results)
+
+    for layer in layer_results:
+      print("End Results")
+      print(layer)
+    exit()
 
 # VISUALS
 
@@ -177,8 +195,8 @@ def dtests():
   #dtest('out/texts/russian.tsv')
 
 def ntest() :
-  t=Trainer()
-  i=Inferencer()
+  #t=Trainer()
+  i=Inferencer("texts/shopping_bot")
   print("\n\n")
   print("ALGORITHMICALLY DERIVED ANSWERS:\n")
 

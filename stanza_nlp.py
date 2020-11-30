@@ -21,7 +21,7 @@ class NLP :
 
   # process text from a file
   #def from_file(self,fname='texts/english'):
-  def from_file(self,fname='texts/shopping_bot'):
+  def from_file(self,fname='texts/shopping_bot_checkpoint'):
     self.fname=fname
     text = file2text(fname + ".txt")
     self.doc = self.nlp(text)
@@ -179,7 +179,7 @@ def ensure_path(fname) :
 
 # TESTS
 
-def test(fname='texts/shopping_bot',lang='en') :
+def test(fname='texts/shopping_bot_checkpoint',lang='en') :
   nlp=NLP(lang)
   nlp.from_file(fname)
   nlp.to_tsv()
@@ -188,7 +188,7 @@ def test(fname='texts/shopping_bot',lang='en') :
   nlp.show()
 
 if __name__=="__main__" :
-  test(fname='texts/shopping_bot',lang='en')
+  test(fname='texts/shopping_bot_checkpoint',lang='en')
   #test(fname='texts/const',lang='en')
   # test(fname='texts/spanish',lang='es')
   # test(fname='texts/chinese',lang='zh-hans')

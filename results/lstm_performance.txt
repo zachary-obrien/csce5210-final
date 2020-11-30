@@ -1,0 +1,221 @@
+To preface, as you look through this code you will see three for loops in the training method. We set up our LSTM to attempt many different combinations of "number of nodes" and "number of epochs" in order to find the best combination. Additionally, we had each of these run 10 times to account for randomness and kept the best network. For our code we found that a 20 Node 25Epoch trained LSTM network worked the best, but it also significantly underperformed compared to the Artificial Neural Network in "nlp_nn.py"
+
+As the below shows, using an LSTM has drastically decreased speed and accuracy. The dense neural network performs above 90% accuracy and is able to train in only a few seconds. On the other hand, using an LSTM at most achieves 6% accuracy and takes quite a few minutes to train only 25 epochs. Even beyond the training metrics, you can see that the results it does predict are a consistent single sentence which, while still relevant, is not pertinent to the given question like stanza and the nlp_nn is.
+
+This is probably due to multiple factors. The first of which is the lack of training data for this specific example. Deep neural networks (vs the ANN that is working better) requires significantly more data to function. For example, when we changed the proportion of data given to the validation set then there was a drastic decrease in performance. With the validation set at 10% we're able to achieve 5-6%, with in setting the validation set to 25% the LSTM performance immediately went down to around 2% accuracy. Second, the LSTM approach might be overkill for a straightforward example such as this. With a limited dataset and relatively simple predictions a smaller, cleaner  network turned out to be more efficient.
+
+Overall the use of LSTMs for a variety of functions helps make significant gains in accuracy, but in this specific case a simple ANN performs better.
+
+
+----------FULL RESULTS---------
+
+ALGORITHMICALLY DERIVED ANSWERS:
+
+Query: When are shopping bots used?
+
+HIT COUNTS: Counter({14: 5, 34: 3, 3: 3, 5: 3, 11: 3, 17: 3, 18: 3, 20: 3, 21: 3, 23: 3, 24: 3, 26: 3, 28: 3, 61: 3, 30: 3})
+
+14 : In the broker agent approach, shopping bots are used to extract product information from different sellers’ web sites.
+34 : PersonaLogic, another comparison-shopping bot, let users create personal profiles to describe their preferences.
+3 : There are various shopping bot services.
+
+Query: How do you use shopping bots?
+
+HIT COUNTS: Counter({34: 3, 3: 3, 5: 3, 11: 3, 14: 3, 17: 3, 18: 3, 20: 3, 21: 3, 23: 3, 24: 3, 26: 3, 28: 3, 61: 3, 30: 3})
+
+34 : PersonaLogic, another comparison-shopping bot, let users create personal profiles to describe their preferences.
+3 : There are various shopping bot services.
+5 : A server-based shopping bot performs price comparison on a Web server.
+
+Query: What are client-based shopping bots?
+
+HIT COUNTS: Counter({7: 5, 5: 5, 30: 5, 34: 3, 3: 3, 11: 3, 14: 3, 17: 3, 18: 3, 20: 3, 21: 3, 23: 3, 24: 3, 26: 3, 28: 3, 61: 3, 4: 1, 25: 1, 60: 1})
+
+7 : For a client-based bot, a special software application needs to be installed on the client-side.
+5 : A server-based shopping bot performs price comparison on a Web server.
+30 : Client-based shopping bots that appeared in the beginning of 1997 achieved that by allowing consumers to comparisonshop online without actually visiting merchants’ sites to locate best prices.
+
+Query: What is a difference between server-based and client-based solutions?
+
+HIT COUNTS: Counter({4: 5, 7: 5, 5: 3, 25: 2, 60: 2, 30: 2})
+
+4 : In general, they can be divided into two types: server-based and client-based solutions.
+7 : For a client-based bot, a special software application needs to be installed on the client-side.
+5 : A server-based shopping bot performs price comparison on a Web server.
+
+Query: What are the three ways used to provide shopping bot services?
+
+HIT COUNTS: Counter({10: 6, 3: 6, 34: 3, 5: 3, 11: 3, 14: 3, 17: 3, 18: 3, 20: 3, 21: 3, 23: 3, 24: 3, 26: 3, 28: 3, 61: 3, 30: 3, 36: 1, 13: 1})
+
+10 : Technically, there are three ways to provide shopping bot services: a centralized database, broker agents and mobile agents.
+3 : There are various shopping bot services.
+34 : PersonaLogic, another comparison-shopping bot, let users create personal profiles to describe their preferences.
+
+Query: How are shopping bots used in the centralized approach?
+
+HIT COUNTS: Counter({11: 3, 14: 3})
+
+11 : In the centralized database approach, each shopping bot has its own product information database.
+14 : In the broker agent approach, shopping bots are used to extract product information from different sellers’ web sites.
+
+Query: How are shopping bots used in the broker agent approach?
+
+HIT COUNTS: Counter({14: 9, 10: 3, 11: 2})
+
+14 : In the broker agent approach, shopping bots are used to extract product information from different sellers’ web sites.
+10 : Technically, there are three ways to provide shopping bot services: a centralized database, broker agents and mobile agents.
+11 : In the centralized database approach, each shopping bot has its own product information database.
+
+Query: What can a mobile agent be used to do?
+
+HIT COUNTS: Counter({16: 2, 29: 1, 54: 1, 10: 1, 14: 1})
+
+16 : Besides searching, a mobile agent can in fact be employed to complete a purchase which is the last step in the buying process.
+29 : A shopping agent queries multiple sites on behalf of a shopper to gather pricing and other information on products and services.
+54 : Excite acquired and commercialized it under the name Jango but soon replaced it with a biased vendor-driven agent.
+
+Query: why are current business models ae based on vendor revenue?
+
+HIT COUNTS: Counter({59: 3})
+
+59 : Most current business models are based on vendor rather than buyer revenue, because users are reluctant to pay fees for these services.
+
+Query: What was the purpose of the bot named 'Tete@Tete'?
+
+HIT COUNTS: Counter({17: 1, 18: 1, 21: 1, 23: 1, 45: 1, 35: 1, 13: 1})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+18 : Hence, the usage of a shopping bot is not limited to simply typing in a few keywords and waiting for the results.
+21 : This is particularly important since the use of a shopping bot is only one stage in the product acquisition process.
+
+
+
+NEURAL NET'S ANSWERS:
+
+Query: When are shopping bots used?
+2020-11-30 15:27:44.901296: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:126] None of the MLIR optimization passes are enabled (registered 2)
+2020-11-30 15:27:44.921570: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3600000000 Hz
+
+HIT COUNTS: Counter({17: 7, 42: 3})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+42 : Such predictions are specific to the person, but use information gleaned from many users.
+
+Query: How do you use shopping bots?
+
+HIT COUNTS: Counter({17: 7, 42: 4})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+42 : Such predictions are specific to the person, but use information gleaned from many users.
+
+Query: What are server-based shopping bots?
+
+HIT COUNTS: Counter({17: 15})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: What are client-based shopping bots?
+
+HIT COUNTS: Counter({17: 15})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: What is a difference between server-based and client-based solutions?
+
+HIT COUNTS: Counter({17: 19})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: What are the three ways used to provide shopping bot services?
+
+HIT COUNTS: Counter({17: 14, 46: 5, 42: 1})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+46 : However, collaborative filtering has become a common technique nowadays; for example large commercial vendors such as Amazon use it, although in simplified ways.
+42 : Such predictions are specific to the person, but use information gleaned from many users.
+
+Query: How are shopping bots used in the centralized approach?
+
+HIT COUNTS: Counter({17: 12})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: What does collaborative filtering imply?
+
+HIT COUNTS: Counter({17: 7})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: why are current business models ae based on vendor revenue?
+
+HIT COUNTS: Counter({17: 21})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: What was the purpose of Tete@Tete?
+
+HIT COUNTS: Counter({17: 8})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: How do you use shopping bots?
+
+HIT COUNTS: Counter({17: 7, 42: 4})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+42 : Such predictions are specific to the person, but use information gleaned from many users.
+
+Query: What are client-based shopping bots?
+
+HIT COUNTS: Counter({17: 15})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: What is a difference between server-based and client-based solutions?
+
+HIT COUNTS: Counter({17: 19})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: What are the three ways used to provide shopping bot services?
+
+HIT COUNTS: Counter({17: 14, 46: 5, 42: 1})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+46 : However, collaborative filtering has become a common technique nowadays; for example large commercial vendors such as Amazon use it, although in simplified ways.
+42 : Such predictions are specific to the person, but use information gleaned from many users.
+
+Query: How are shopping bots used in the centralized approach?
+
+HIT COUNTS: Counter({17: 12})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: How are shopping bots used in the broker agent approach?
+
+HIT COUNTS: Counter({17: 19})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: What does collaborative filtering imply?
+
+HIT COUNTS: Counter({17: 7})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: why are current business models ae based on vendor revenue?
+
+HIT COUNTS: Counter({17: 21})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+Query: What was the purpose of the bot named 'Tete@Tete'?
+
+HIT COUNTS: Counter({17: 13})
+
+17 : A theoretical framework that leads to the development of shopping bots can be found in the economics of information theory, where Stigler argued that consumers who value time will stop searching when the marginal benefits of search no longer outweigh the marginal search costs.
+
+
+Process finished with exit code 0
+
+
