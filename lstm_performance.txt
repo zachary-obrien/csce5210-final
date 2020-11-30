@@ -1,0 +1,3 @@
+As the below shows, using an LSTM has drastically decreased speed and accuracy. The dense neural network performs above 90% accuracy and is able to train in only a few seconds. On the other hand, using an LSTM at most achieves 6% accuracy and takes quite a few minutes to train only 25 epochs. Even beyond the training metrics, you can see that the results it does predict are a consistent single sentence which, while still relevant, is not pertinent to the given question like stanza and the nlp_nn is. 
+
+----------TRIMMED RESULTS---------
