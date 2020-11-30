@@ -138,7 +138,6 @@ class Trainer(Data) :
 
     loss, accuracy = model.evaluate(self.hot_X, self.hot_y)
     print('Accuracy:', round(100 * accuracy, 2), ', % Loss:', round(100 * loss, 2), '%')
-    exit()
 
 
 # VISUALS
