@@ -8,7 +8,6 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import load_model
-from keras.callbacks import EarlyStopping, ModelCheckpoint
 
 physical_devices = tf.config.list_physical_devices('GPU')
 tf.config.experimental.set_memory_growth(
@@ -27,7 +26,7 @@ class Data :
   links are of the form POS_deprelPOS wuth POS and deprel
   tags concatenated
   '''
-  def __init__(self,fname='texts/shopping_bot') :
+  def __init__(self,fname='texts/english') :
     wss = tsv2mat("out/"+fname+".tsv")
     self.sents=tsv2mat("out/"+fname+"_sents.tsv")
     occs=defaultdict(set)
@@ -73,7 +72,7 @@ class Query(Data) :
   text query and matches it against data to retrive
   sentences in which most of those edges occur
   '''
-  def __init__(self,fname='texts/shopping_bot'):
+  def __init__(self,fname='texts/english'):
     super().__init__(fname=fname)
     self.nlp_engine=nlp.NLP()
 
@@ -101,7 +100,7 @@ class Inferencer(Query) :
   loads model trained on associating dependency
   edges to sentences in which they occur
   '''
-  def __init__(self,fname='texts/shopping_bot'):
+  def __init__(self,fname='texts/english'):
     super().__init__(fname=fname)
     self.model = load_model(fname+"_model")
 
@@ -123,45 +122,26 @@ class Trainer(Data) :
   '''
   neural network trainer and model builder
   '''
-  def __init__(self,fname='texts/shopping_bot'):
+  def __init__(self,fname='texts/english'):
     super().__init__(fname=fname)
+    model = keras.Sequential()
+    model.add(layers.Embedding(input_dim=self.hot_X.shape[1], output_dim=self.hot_y.shape[1], input_length=self.hot_X.shape[1]))
+    model.add(layers.LSTM(50))
+    model.add(layers.Dropout(0.1))
+    model.add(layers.Dense(self.hot_y.shape[1], activation='softmax'))
+    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+    model.summary()
+    history = model.fit(self.hot_X, self.hot_y, epochs=100, batch_size=16)
 
-    lstm_node_counts = [50]#[1, 5, 10, 15, 20, 25, 35, 50, 70, 100]
-    num_epochs = [50] #[1, 3, 5, 10, 25]
-    layer_results = []
-    for num_nodes in lstm_node_counts:
-      for epochs in num_epochs:
-        for attempt_num in range(1,2):
-          single_fname = fname + "_" + str(attempt_num)
-          #checkpoint_name = single_fname + '/best_model.h5'
-          #callbacks = [EarlyStopping(monitor='accuracy', patience=5),
-          #             ModelCheckpoint(filepath=checkpoint_name, monitor='accuracy', save_best_only=True)]
+    model.save(fname+"_model")
 
-          model = keras.Sequential()
-          model.add(layers.Embedding(input_dim=self.hot_X.shape[1], output_dim=self.hot_y.shape[1], input_length=self.hot_X.shape[1]))
-          #model.add(layers.LSTM(10,return_sequences=True,activation='relu'))
-          model.add(layers.LSTM(num_nodes))
-          model.add(layers.Dropout(0.15))
-          model.add(layers.Dense(self.hot_y.shape[1], activation='softmax'))
-          model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-          model.summary()
-          history = model.fit(self.hot_X, self.hot_y, epochs=25, batch_size=8)
+    # visualize and inform about accuracy and loss
+    plot_graphs(fname + "_loss", history, 'loss')
+    plot_graphs(fname + "_acc", history, 'accuracy')
 
+    loss, accuracy = model.evaluate(self.hot_X, self.hot_y)
+    print('Accuracy:', round(100 * accuracy, 2), ', % Loss:', round(100 * loss, 2), '%')
 
-          model.save(single_fname+"_model")
-
-          # visualize and inform about accuracy and loss
-          plot_graphs(single_fname + "_loss", history, 'loss')
-          plot_graphs(single_fname + "_acc", history, 'accuracy')
-
-          loss, accuracy = model.evaluate(self.hot_X, self.hot_y)
-          print('Accuracy:', round(100 * accuracy, 2), ', % Loss:', round(100 * loss, 2), '%')
-          results = ''.join(['Attempt: ', str(attempt_num), ' Accuracy: ', str(round(100 * accuracy, 2)), ', % Loss: ', str(round(100 * loss, 2)), '%'])
-          layer_results.append(results)
-
-    for layer in layer_results:
-      print("End Results")
-      print(layer)
 
 # VISUALS
 
@@ -193,40 +173,23 @@ def dtest() :
   print(d.hot_y)
 
 def dtests():
-  dtest('out/texts/shopping_bot.tsv')
+  dtest('out/texts/english.tsv')
   #dtest('out/texts/const.tsv')
   #dtest('out/texts/spanish.tsv')
-  #dtest('out/texts/chinese.tsv')
+  dtest('out/texts/chinese.tsv')
   #dtest('out/texts/russian.tsv')
 
 def ntest() :
   t=Trainer()
-  i=Inferencer("texts/shopping_bot")
-  # print("\n\n")
-  # print("ALGORITHMICALLY DERIVED ANSWERS:\n")
-
-
-  # i.ask("When are shopping bots used?")
-  # i.ask("How do you use shopping bots?")
-  # i.ask("What are client-based shopping bots?")
-  # i.ask("What is a difference between server-based and client-based solutions?")
-  # i.ask("What are the three ways used to provide shopping bot services?")
-  # i.ask("How are shopping bots used in the centralized approach?")
-  # i.ask("How are shopping bots used in the broker agent approach?")
-  # i.ask("What can a mobile agent be used to do?")
-  # i.ask("why are current business models ae based on vendor revenue?")
-  # i.ask("What was the purpose of the bot named 'Tete@Tete'?")
-
-
-  # i.ask("What did Penrose show about black holes?")
-  # i.ask(text="What was in Roger's 1965 paper?")
-
+  i=Inferencer()
+  print("\n\n")
+  print("ALGORITHMICALLY DERIVED ANSWERS:\n")
+  i.ask("What did Penrose show about black holes?")
+  i.ask(text="What was in Roger's 1965 paper?")
   print("\n")
   print("NEURAL NET'S ANSWERS:\n")
-  # i.query("Who owns TikTok?")
-  # i.query("Is China Communist?")
-
   i.query("What did Penrose show about black holes?")
   i.query(text="What was in Roger's 1965 paper?")
+
 if __name__=="__main__" :
   ntest()
